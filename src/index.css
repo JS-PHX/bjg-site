@@ -17,7 +17,7 @@ div {
   height: 100%;
   background-color: maroon;
 }
-nav {
+navbar {
   display: flex;
   align-items: center;
   background-color: #21222A;
