@@ -17,7 +17,7 @@ div {
   height: 100%;
   background-color: maroon;
 }
-nav {
+navbar {
   display: flex;
   align-items: center;
   background-color: #21222A;
@@ -28,5 +28,10 @@ nav {
 h1 {
   color: red;
   font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover {
+  color: pink;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
