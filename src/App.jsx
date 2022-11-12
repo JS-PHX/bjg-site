@@ -1,11 +1,12 @@
 
 import Nav from "./components/nav"
+import Home from "./components/main"
 
 export default function App(){
     return (
         <div>
             <Nav />
-            <h1>go suns</h1>
+            <Home />
         </div>
     )
 }

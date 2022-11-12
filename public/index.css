@@ -4,34 +4,79 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url(pics/bjg.jpg);
+body, html {
+  /* background-image: url(pics/bjg.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
   height: 100%;
+}
+parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 div {
-  width: 100%;
-  height: 100%;
-  background-color: maroon;
-}
-navbar {
-  display: flex;
-  align-items: center;
-  background-color: #21222A;
-  height: 50px;
-  padding: 30px 25px;
+  background-image: url(./pics/bjg.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+header {
+  text-align: end;
+}
+
+nav {
+  text-align: end;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #024D8C;
+  height: 50px;
+  width: 100%;
+  box-shadow: 1px 1px 5px grey;
+}
+
+
+
 h1 {
-  color: red;
-  font-family: 'Times New Roman', Times, serif;
+  color: #F3F7FA;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5px;
+  margin-left: 25px;
+}
+
+a {
+  text-align: end;
+  overflow: hidden;
+  float: right;
+  color: #F3F7FA;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #FFD802;
+  color: white;
+  padding-right: 2em;
+  margin: 5px;
+  transition: color .2s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 a:hover {
-  color: pink;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: inset 100px 10px 50px 10px #54b3d6;
+  color: white;
 }
 
+home-page {
+  background-color: #FFD802;
+}
