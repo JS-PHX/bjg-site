@@ -34,19 +34,19 @@ div {
 }
 
 header {
-  text-align: end;
+  text-align: right;
 }
 
 nav {
-  text-align: end;
+  text-align: right;
   margin: 0px;
-  padding: 0px;
-  display: flex;
-  align-items: flex-end;
+  padding: 10px;
+  /* display: flex; */
+  /* align-items: flex-end; */
   background-color: #024D8C;
-  height: 50px;
+  height: 10%;
   width: 100%;
-  box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px black;
 }
 
 
@@ -54,27 +54,35 @@ nav {
 h1 {
   color: #F3F7FA;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 5px;
+  margin-top: 5px;
   margin-left: 25px;
+  display: flex;
 }
 
 a {
-  text-align: end;
+  text-align: right;
   overflow: hidden;
   float: right;
   color: #F3F7FA;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
-  box-shadow: inset 0 0 0 0 #FFD802;
-  color: white;
-  padding-right: 2em;
-  margin: 5px;
-  transition: color .2s ease-in-out, box-shadow .3s ease-in-out;
+  padding-right: 3em;
+  --b: 0.1em;   /* the thickness of the line */
+  --c: #FFD802; /* the color */
+  
+  color: rgba(161, 8, 8, 0);
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,rgb(255, 255, 255) 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
 }
 
 a:hover {
-  box-shadow: inset 100px 10px 50px 10px #54b3d6;
-  color: white;
+  --_p: 90%;
+  --_s: .2s;
 }
 
 home-page {
