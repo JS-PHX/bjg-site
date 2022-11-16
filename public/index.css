@@ -33,14 +33,10 @@ div {
   background-size: cover;
 }
 
-header {
-  text-align: right;
-}
-
 nav {
   text-align: right;
-  margin: 0px;
-  padding: 10px;
+  margin: none;
+  padding: 1px;
   /* display: flex; */
   /* align-items: flex-end; */
   background-color: #024D8C;
@@ -51,22 +47,25 @@ nav {
 
 
 
-h1 {
+.title {
+  font-size: 32px;
   color: #F3F7FA;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Noto Serif Oriya', serif;;
   margin-top: 5px;
-  margin-left: 25px;
+  margin-left:2em;
+  padding-top: 25px;
   display: flex;
 }
 
+
+/* fancy mouse hover for links */
 a {
-  text-align: right;
-  overflow: hidden;
   float: right;
   color: #F3F7FA;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-decoration: none;
+  font-family: 'Noto Serif Oriya', serif;;
   padding-right: 3em;
+  margin-top: 2em;
+  
   --b: 0.1em;   /* the thickness of the line */
   --c: #FFD802; /* the color */
   
@@ -79,12 +78,39 @@ a {
           background-clip: text,padding-box;
   transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
 }
-
 a:hover {
   --_p: 90%;
   --_s: .2s;
 }
 
-home-page {
-  background-color: #FFD802;
+.homepage {
+  margin: 20px;
+  height: auto;
+  width: 75%;
+  background-color: #024D8C;
+}
+
+.about {
+  margin: 100px;
+  padding: 50px;
+  background-color: rgb(2, 77, 140, 75%);
+  border-radius: 15px;
+  color: #F3F7FA;
+  text-shadow: 1px .5px black;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2em;
+  font-size: 22;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
+  
+}
+
+.about:hover {
+  -webkit-transform: scale(1.02);
+	transform: scale(1.02);
+  background-color: rgb(2, 77, 140, 90%);
+  border-radius: 0px;
 }
