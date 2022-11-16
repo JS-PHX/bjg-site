@@ -39,7 +39,7 @@ nav {
   padding: 1px;
   /* display: flex; */
   /* align-items: flex-end; */
-  background-color: #024D8C;
+  background-color: rgb(2, 77, 140, 90%);
   height: 10%;
   width: 100%;
   box-shadow: 1px 1px 5px black;
@@ -86,21 +86,22 @@ a:hover {
 .homepage {
   margin: 20px;
   height: auto;
-  width: 75%;
+  width: auto;
   background-color: #024D8C;
 }
 
 .about {
+  width: auto;
   margin: 100px;
   padding: 50px;
   background-color: rgb(2, 77, 140, 75%);
   border-radius: 15px;
   color: #F3F7FA;
   text-shadow: 1px .5px black;
-  text-align: center;
+  text-align: left;
   font-family: 'Roboto', sans-serif;
   line-height: 2em;
-  font-size: 22;
+  font-size: 22px;
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .9s ease-in-out;
