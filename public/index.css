@@ -12,7 +12,7 @@ body, html {
 }
 parallax {
   /* The image used */
-  background-image: url("img_parallax.jpg");
+  background-image: url("pics/bjg.jpg");
 
   /* Full height */
   height: 100%;
@@ -40,14 +40,14 @@ nav {
   /* display: flex; */
   /* align-items: flex-end; */
   background-color: rgb(2, 77, 140, 90%);
-  height: 10%;
+  height: 12%;
   width: 100%;
   box-shadow: 1px 1px 5px black;
 }
 
 
 
-.title {
+/* .title {
   font-size: 32px;
   color: #F3F7FA;
   font-family: 'Noto Serif Oriya', serif;;
@@ -55,8 +55,13 @@ nav {
   margin-left:2em;
   padding-top: 25px;
   display: flex;
-}
+} */
 
+.logo {
+  float: left;
+  display: block;
+  width: 225px;
+}
 
 /* fancy mouse hover for links */
 a {
@@ -91,7 +96,7 @@ a:hover {
 }
 
 .about {
-  width: auto;
+  min-width: auto;
   margin: 100px;
   padding: 50px;
   background-color: rgb(2, 77, 140, 75%);
