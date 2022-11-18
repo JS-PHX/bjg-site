@@ -2,7 +2,7 @@ export default function Phone(){
     return (
         <div>
             <content className="number">
-                <h3>4345</h3>
+                <h2>4345</h2>
 
             </content>
         </div>

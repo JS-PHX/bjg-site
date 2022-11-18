@@ -8,6 +8,7 @@ export default function App(){
         <div>
             <Nav />
             <Home />
+            <Phone />
         </div>
     )
 }
