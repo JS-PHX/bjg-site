@@ -9,7 +9,7 @@ export default function App(){
         <div>
             <Nav />
             <Home />
-            <Phone />
+            {/* <Phone /> */}
             <Footer />
         </div>
     )
