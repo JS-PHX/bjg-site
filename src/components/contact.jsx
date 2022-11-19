@@ -1,10 +1,12 @@
 export default function Phone(){
     return (
-        <div>
-            <content className="number">
-                <h2>4345</h2>
+        <div className="number">
+                <h3 className="phonenum">
+                Contact <br />
+                Phone: (602) 200-7028
+                Fax: (602) 200-7029
+                </h3>
 
-            </content>
         </div>
     )
 }
