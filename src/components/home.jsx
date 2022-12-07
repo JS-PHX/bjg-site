@@ -1,3 +1,4 @@
+
 export default function Home(){
     return (
         <body>
@@ -14,7 +15,6 @@ export default function Home(){
 
             </div>
            </container>
-    )
         </body>
     )
 }

@@ -1,19 +1,18 @@
 
-import Nav from "./components/nav"
-import Home from "./components/main"
-import Footer from "./components/footer"
-import { BrowserRouter, Route } from 'react-router-dom'
+// import Nav from "./components/nav"
+import Home from "./components/home"
+// import Footer from "./components/footer"
+import { Routes, Route } from 'react-router-dom'
 
 export default function App(){
     return (
-        <div>
-         <Nav />
-            <BrowserRouter> 
-                <Route>
-                    <Route path="/" element={<Home />} exact/>
-                </Route>
-            </BrowserRouter> 
-         <Footer />
-        </div>
+        <Routes>
+            <Route path="/" element={<Home />}/>
+        </Routes>
+
+        // <div>
+        //  <Nav />
+        //  <Footer />
+        // </div>
     )
 }
