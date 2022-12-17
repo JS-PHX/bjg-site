@@ -29,7 +29,7 @@ header {
 
 nav {
   text-align: right;
-  margin: none;
+  margin-bottom: 2rem;
   padding: 1px;
   /* display: flex; */
   /* align-items: flex-end; */
@@ -37,6 +37,7 @@ nav {
   height: 12%;
   width: 100%;
   box-shadow: 1px 1px 5px black;
+  position: fixed;
 }
 
 
@@ -96,14 +97,14 @@ a:hover {
   align-content: center;
   width: 75%;
   margin: auto;
-  margin-top: 2.5em;
+  margin-top: 7.5em;
   padding: 25px;
-  background-color: rgb(2, 77, 140, 85%);
+  background-color: rgb(2, 77, 140, 75%);
   /* border-radius: 15px; */
   color: #F3F7FA;
   text-shadow: 1px .5px black;
   text-align: center;
-  filter: blur(1.3px);
+  filter: blur(.5px);
   font-family: 'Roboto', sans-serif;
   line-height: 2em;
   font-size: 22px;
@@ -115,43 +116,45 @@ a:hover {
 }
 
 .about:hover {
-  background: rgb(2, 77, 140, 90%);
+  background: rgb(2, 77, 140, 95%);
 	color: #F3F7FA;
 	box-shadow: inset 0 0 0 5px #FFD802;
-  -webkit-transform: scale(1.02);
-	transform: scale(1.02);
+  /* -webkit-transform: scale(1.02);
+	transform: scale(1.02); */
   border-radius: 0px;
   filter: none;
 }
 
 .phonenum {
-  margin: 2em;
-  margin-left: 7em;
+  float: left;
+  margin-top: 2rem;
   padding: 10px;
   height: auto;
+  filter: blur(.5px);
   /* border-radius: 15px; */
-  width: 15%;
-  background-color: rgb(2, 77, 140, 85%);
+  width: 14rem;
+  background-color: rgb(2, 77, 140, 75%);
   transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out; 
 }
 .phonenum:hover {
+  background-color: rgb(2, 77, 140, 95%);
   box-shadow: inset 0 0 0 3px #FFD802;
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+  filter: none;
 }
 
 .number {
-  width: auto;
-  margin-left: 50px;
+  margin: auto;
+  width: 75%;
+  background-color: #F3F7FA;
   color: #F3F7FA;
   text-shadow: 1px .5px black;
   text-align: left;
-  /* border-radius: 15px; */
-  filter: blur(1.3px);
   font-family: 'Roboto', sans-serif;
   line-height: 3em;
   -webkit-transform: scale(1);
@@ -160,15 +163,8 @@ a:hover {
 	transition: .3s ease-in-out;
   font-size: 14px;
 }
-.number:hover {
-  /* -webkit-transform:rotate3d(5);;
-	transform: rotate3d(5); */
-  border-radius: 0px;
-  filter: none;
-}
 
 footer {
-  height: auto;
   width: 100%;
   text-align: center;
   padding: 5px;
@@ -176,5 +172,94 @@ footer {
   font-size: 10px;
   background-color: rgb(2, 77, 140, 90%);
   font-family: 'Roboto', sans-serif;
+  position: fixed;
+  bottom: 0;
+}
 
+.contactTitle {
+  font-family: 'Noto Serif Oriya', serif;;
+  text-align: center;
+}
+
+.message {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 10rem;
+  position: fixed;
+}
+
+form {
+  background-color: rgb(2, 77, 140, 75%);
+  /* background-image: url(pics/rock.jpg); */
+  color: #F3F7FA;
+  width: 50%;
+  height: auto;
+  font-family: 'Noto Serif Oriya', serif;;
+  padding: 7rem;
+  margin: auto;
+  display: inline-block;
+  transition: .3s ease-in;
+  
+}
+
+form:hover {
+  background-color: rgb(2, 77, 140, 95%);
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+input {
+  font-family: 'Noto Serif Oriya', serif;;
+  font-size: 16px;
+  background-color: #F3F7FA;
+  border: none;
+  height: 30px;
+  display: block;
+  padding-left: 4px;
+  margin-top: 2rem;
+  width: 100%;
+  opacity: 100%;
+}
+
+input:focus {
+  outline-color: #FFD802;
+  outline-style: solid;
+}
+
+textarea {
+  font-family: 'Noto Serif Oriya', serif;;
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 2px;
+  height: 5rem;
+  width: 100%;
+}
+textarea:focus {
+  outline-color: #FFD802;
+  outline-style: solid;
+}
+
+.emailButton {
+  background-color: #F3F7FA;
+  font-family: 'Roboto', sans-serif;
+  font-style: oblique;
+  border: none;
+  margin-top: 1rem;
+  width: auto;
+  padding: .5rem;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.emailButton:hover {
+  background-color: #FFD802;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }

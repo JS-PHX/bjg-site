@@ -17,15 +17,15 @@ export const ContactUs = () => {
   };
 
   return (
+    <div className='message'>
     <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <h1 className='contactTitle'>Contact</h1>
+      <input placeholder="Name" type="text" name="user_name" />
+      <input placeholder="E-Mail" type="email" name="user_email" /><br /><br />
+      <textarea placeholder="Message" name="message" />
+      <input className="emailButton" type="submit" value="Send" />
     </form>
+    </div>
   );
 };
 

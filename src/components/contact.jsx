@@ -3,8 +3,8 @@ export default function Phone(){
         <div className="number">
                 <h3 className="phonenum">
                 Contact <br />
-                Phone: (602) 200-7028
-                Fax: (602) 200-7029
+                Phone: (602) 200-7028<br />
+                <br />Fax: (602) 200-7029
                 </h3>
 
         </div>
