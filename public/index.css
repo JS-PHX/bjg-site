@@ -12,6 +12,7 @@ body, html {
   height: 100%;
 }
 
+
 div {
   /* background-image: url(./pics/bjg.jpg); */
   /* Create the parallax scrolling effect */
@@ -23,13 +24,15 @@ div {
 
 header {
   margin: 0px;
+  margin-bottom: 5rem;
   padding: 0px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 nav {
   text-align: right;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   padding: 1px;
   /* display: flex; */
   /* align-items: flex-end; */
@@ -38,6 +41,7 @@ nav {
   width: 100%;
   box-shadow: 1px 1px 5px black;
   position: fixed;
+  top: 0;
 }
 
 
@@ -48,6 +52,7 @@ nav {
   font-family: 'Noto Serif Oriya', serif;;
   padding-top: 45px;
   display: flex;
+  pointer-events: none;
 }
 
 .logo {
@@ -59,6 +64,7 @@ nav {
   overflow: hidden;
   z-index: 1;
   height: 75;
+  pointer-events: none;
 }
 
 /* fancy mouse hover for links */
@@ -85,29 +91,46 @@ a:hover {
   --_s: .2s;
 }
 
+/* h1 {
+  color: #F3F7FA;
+} */
+
 .homepage {
-  margin: 25px;
+  margin: auto;
+  margin-top: 10rem;
+  width: 100%;
   height: auto;
-  width: auto;
-  background-color: #024D8C;
+  overflow: hidden;
+  padding: 100px;
+  background-color: rgb(2, 77, 140, 50%);
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; 
+}
+
+.homepage:hover {
+  background-color: rgb(2, 77, 140, 50%);
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out; 
 }
 
 .about {
+  overflow: hidden;
   min-width: auto;
   align-content: center;
   width: 75%;
+  height: 5rem;
   margin: auto;
-  margin-top: 7.5em;
+  margin-top: 2rem;
   padding: 25px;
-  background-color: rgb(2, 77, 140, 75%);
+  background: linear-gradient(.25turn, rgb(2, 77, 140, 90%), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
   /* border-radius: 15px; */
   color: #F3F7FA;
   text-shadow: 1px .5px black;
-  text-align: center;
+  text-align: left;
   filter: blur(.5px);
   font-family: 'Roboto', sans-serif;
-  line-height: 2em;
-  font-size: 22px;
+  font-weight: 900;
+  font-size: 34px;
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .5s ease-in-out;
@@ -116,14 +139,41 @@ a:hover {
 }
 
 .about:hover {
-  background: rgb(2, 77, 140, 95%);
+  overflow: hidden;
+  background: rgb(2, 77, 140, 90%);
 	color: #F3F7FA;
-	box-shadow: inset 0 0 0 5px #FFD802;
+  box-shadow: inset 5px 0 0 0 #FFD802;
   /* -webkit-transform: scale(1.02);
 	transform: scale(1.02); */
+  transition: all ease .7s;
   border-radius: 0px;
   filter: none;
+  font-size: 0;
+  min-width: auto;
+  align-content: center;
+  width: 75%;
+  height: auto;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 25px;
+  font-weight: 250;
+  text-align: center;
 }
+
+.about:hover::before {
+  overflow: hidden;
+  content: attr(data-hover);
+  font-size: 22px;
+  line-height: 2.5rem;
+  transition: all ease 5s;
+  min-width: auto;
+  align-content: center;
+  width: 25%;
+  margin: auto;
+  padding:50px;
+  font-weight: 100;
+}
+
 
 .phonenum {
   float: left;
@@ -133,26 +183,30 @@ a:hover {
   filter: blur(.5px);
   /* border-radius: 15px; */
   width: 14rem;
-  background-color: rgb(2, 77, 140, 75%);
+  background: linear-gradient(.25turn, rgb(2, 77, 140, 95%), rgba(255, 255, 255, 0));
+  border: 5px #F3F7FA;
   transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out; 
+  position: relative;
 }
 .phonenum:hover {
-  background-color: rgb(2, 77, 140, 95%);
-  box-shadow: inset 0 0 0 3px #FFD802;
+  background: linear-gradient(.25turn, rgb(2, 77, 140, 90%), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  box-shadow: inset 5px 0 0 0 #FFD802;
   -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
   filter: none;
+  position: relative;
+  width: 100%;
 }
 
 .number {
   margin: auto;
   width: 75%;
-  background-color: #F3F7FA;
   color: #F3F7FA;
+  border: 5px #F3F7FA;
   text-shadow: 1px .5px black;
   text-align: left;
   font-family: 'Roboto', sans-serif;
@@ -162,6 +216,8 @@ a:hover {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
   font-size: 14px;
+  position: sticky;
+  bottom: 0;
 }
 
 footer {
@@ -182,11 +238,12 @@ footer {
 }
 
 .message {
+  /* background-color: rgb(2, 77, 140, 75%); */
   width: 100%;
   display: flex;
   align-items: center;
   margin: auto;
-  margin-top: 10rem;
+  margin-top: 5rem;
   position: fixed;
 }
 
@@ -197,9 +254,13 @@ form {
   width: 50%;
   height: auto;
   font-family: 'Noto Serif Oriya', serif;;
-  padding: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   margin: auto;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: inline-block;
   transition: .3s ease-in;
   
@@ -247,10 +308,10 @@ textarea:focus {
 }
 
 .emailButton {
-  background-color: #F3F7FA;
+  background-color: rgb(243, 247, 250, 75%);
   font-family: 'Roboto', sans-serif;
-  font-style: oblique;
   border: none;
+  margin: auto;
   margin-top: 1rem;
   width: auto;
   padding: .5rem;
@@ -265,4 +326,8 @@ textarea:focus {
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+}
+
+.emailButton:active {
+  color: #F3F7FA;
 }
