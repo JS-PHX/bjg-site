@@ -1,9 +1,11 @@
 
 import Nav from "./components/nav"
-import ContactUs from "./components/EmailForm"
-import Home from "./components/home"
+// import ContactUs from "./components/EmailForm"
+// import Home from "./components/home"
+// import Gallery from "./components/gallery"
 import Footer from "./components/footer"
-import { Routes, Route } from 'react-router-dom'
+// import { Routes, Route } from 'react-router-dom'
+import AnimatedRoutes from "./components/AnimatedRoutes"
 
 export default function App(){
     return (
@@ -11,11 +13,7 @@ export default function App(){
             <Nav />
 
         <div>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route exact path="/home" element={<Home />} />
-                    <Route exact path="/EmailForm" element={<ContactUs />} />
-                </Routes>
+                <AnimatedRoutes />
         </div>
         <Footer />
 

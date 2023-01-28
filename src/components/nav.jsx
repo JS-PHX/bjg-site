@@ -4,7 +4,7 @@ export default function Nav(){
     return (
         <header>
         <nav className="navbar">
-                <h2><Link to="/">Gallery</Link></h2>
+                <h2><Link to="/gallery">Gallery</Link></h2>
                 <h2><Link to="/EmailForm">Contact</Link></h2>
                 <h2><Link to="/">Home</Link></h2>
                 {/* <h2><a href="index.html">Gallery</a></h2>
