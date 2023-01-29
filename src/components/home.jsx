@@ -15,7 +15,7 @@ export default function Home(){
                 We bring our customers with over 15 years of experience in the industry. Keeping quality and competitive prices a priority.
                 Our plant accounts through out the valley and a fleet of dump trucks allow us to arrive at job site in a timely manner and keep costs down. We are here to serve your trucking needs.">About Us</p>} */}
         <section class="container">
-            <h2>Welcome to BJG Trucking</h2>
+            <h2>Welcome</h2>
             <div class="text-container reveal fade-bottom">
                 <div class="text-box" style={{float:"left", marginLeft:"5rem"}}>
                     <h3>BJG Trucking, Inc. is a family owned business founded in 2003 by sister company BJG Grading, Inc.</h3>
