@@ -17,22 +17,22 @@ export default function Home(){
         <section class="container">
             <h2>Welcome to BJG Trucking</h2>
             <div class="text-container reveal fade-bottom">
-                <div class="text-box" style={{float:"left", marginLeft:"5rem"}}>
+                <div class="text-box" className="firstBox">
                     <h3>BJG Trucking, Inc. is a family owned business founded in 2003 by sister company BJG Grading, Inc.</h3>
                 </div>
             </div>
             <div class="text-container reveal fade-bottom">
-                <div style={{display: "block", marginLeft: "auto", marginRight: "auto"}} class="text-box">
-                    <h3 style={{color:"white"}}>We bring our customers over 15 years of experience in the industry. Keeping quality and competitive prices a priority.</h3>
+                <div class="text-box" className="secondBox">
+                    <h3>We bring our customers over 15 years of experience in the industry. Keeping quality and competitive prices a priority.</h3>
                 </div>
             </div>
             <div class="text-container reveal fade-bottom">
-                <div class="text-box" style={{float: "right", marginRight: "5rem"}}>
-                    <h3 style ={{color:"white"}}>Our plant accounts throughout the valley, and a fleet of dump trucks allow us to arrive at job site in a timely manner, and keep costs down. We are here to serve your trucking needs.</h3>
+                <div class="text-box" className="thirdBox">
+                    <h3>Our plant accounts throughout the valley, and a fleet of dump trucks allow us to arrive at job site in a timely manner, and keep costs down. We are here to serve your trucking needs.</h3>
                 </div>
             </div>
             <div class="text-container reveal fade-bottom">
-                <div class="text-box" style={{float:"right", marginLeft:"5rem", width:"auto"}}>
+                <div class="text-box" className="contactBox" style={{float:"right", marginLeft:"5rem", width:"auto"}}>
                     <h3>Contact</h3>
                     <h3>Phone: (602) 200-7028</h3>
                     <h3>Fax: (602) 200-7029</h3>
