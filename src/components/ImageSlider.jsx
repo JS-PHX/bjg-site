@@ -13,15 +13,16 @@ const ImageSlider = ({ slides }) => {
   }  
     
   const slideStyles = {
-    width: `75%`,
-    height: `100%`,
-    backgroundPosition: `center`,
-    backgroundSize: `cover`, 
-    margin: `auto`,
+    // width: `75%`,
+    // height: `100%`,
+    // backgroundPosition: `center`,
+    // backgroundSize: `cover`, 
+    // margin: `auto`,
     backgroundImage: `url(${slides[currentIndex].url})`,
-    zIndex: `-1`,
-    borderRadius: `10px`
+    // zIndex: `-1`,
+    // borderRadius: `10px`
   }
+
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
@@ -46,16 +47,17 @@ useEffect(() => {
     }
     timerRef.current = setTimeout(() => {
         goToNext()
-    }, 2000)
+    }, 3000)
     
     return () => clearTimeout(timerRef.current)
 }, [goToNext])
+
 
 return(
     <div style={divStyles}>
         <div className='actionsLeft' onClick={goToPrevious}>◄</div>
         <div className='actionsRight' onClick={goToNext}>►</div>
-        <div style={slideStyles}></div>
+        <div className="slideshowStyle" style={slideStyles}></div>
         <div className='dotContainer'>
             {slides.map((slide, slideIndex) => (
                 <div className='dotStyles' key={slideIndex} onClick={() => goToSlide(slideIndex)}>•</div>

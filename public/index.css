@@ -172,14 +172,14 @@ section h2 {
   text-decoration-line: underline;
   text-decoration-color: #FFD802;
   color: #F3F7FA;
-  
+  animation: fadeIn 3s;
 }
 section .text-container {
   display: inline-block;
   margin: auto;
   width: 100%;
 }
-section .text-container .text-box {
+/* section .text-container .text-box {
   margin-top: 15rem;
   margin-bottom: 5rem;
   padding: 10px;
@@ -189,6 +189,11 @@ section .text-container .text-box {
   transition: ease all .5s;
   background-color: #A4BEF3;
   border-radius: 1rem;
+} */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .firstBox {
@@ -204,7 +209,6 @@ section .text-container .text-box {
   background-color: #A4BEF3;
   border-radius: 1rem;
   font-family: 'Oswald', sans-serif;
-
 }
 
 .secondBox {
@@ -478,8 +482,13 @@ textarea:focus {
   font-family: 'Oswald', sans-serif; 
 }
 
-.slideshow {
-  position: fixed;
+.slideshowStyle {
+  width: 75%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  /* position: fixed;
   display: block;
   margin: auto;
   margin-bottom: 10rem;
@@ -487,7 +496,7 @@ textarea:focus {
   padding: 5rem;
   transition: all .5s;
   background-color: rgb(2, 77, 140, 0%);
-  animation-name: fader;
+  animation-name: fader; */
 
 }
 
@@ -577,6 +586,9 @@ textarea:focus {
   z-index: -1;
   border-radius: 10px;
 } */
+
+
+/* MOBILE STYLING */
 
 @media (width <= 480px) {
 
@@ -757,5 +769,222 @@ textarea:focus {
     z-index: 0;
     line-height: 2;
   }
+
+  /* contact form  */
+
+.contactTitle {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.message {
+  /* background-color: rgb(2, 77, 140, 75%); */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+
+form {
+  background-color: rgb(243, 247, 250, .25);
+  /* background-image: url(pics/rock.jpg); */
+  color: #F3F7FA;
+  width: 90%;
+  height: auto;
+  font-family: 'Cardo', serif;  
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: .3s ease-in;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+form:hover {
+  box-shadow: inset 0 0 0 3px #FFD802;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  filter: none;
+}
+
+input {
+  font-family: 'Work Sans', sans-serif;  
+  font-size: 16px;
+  background-color: #F3F7FA;
+  border: none;
+  height: 30px;
+  display: block;
+  padding-left: 4px;
+  margin-top: 2rem;
+  width: 100%;
+  opacity: 100%;
+}
+
+input:focus {
+  outline-color: #FFD802;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+textarea {
+  font-family: 'Work Sans', sans-serif;  
+  font-size: 20px;
+  display: inline-block;
+  margin-top: 2px;
+  height: 5rem;
+  width: 100%;
+}
+textarea:focus {
+  outline-color: #FFD802;
+  outline-style: solid;
+  outline-width: 2px;
+
+}
+
+.emailButton {
+  background-color: #f3f7fa;
+  font-family: 'Work Sans', sans-serif;  
+  font-weight: 700;
+  border: none;
+  margin: auto;
+  margin-top: 1rem;
+  width: auto;
+  padding: .5rem;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.emailButton:hover {
+  background-color: #FFD802;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.emailButton:active {
+  color: #F3F7FA;
+}
+
+/* ^^^ contact form ^^^ */
+
+
+/* slideshow styles */
+
+.slideTitle {
+  color: #F3F7FA;
+  font-size: 48px;
+  text-shadow: 1px 0px black;
+  text-align: center;
+  margin-top: 7.5rem;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif; 
+}
+
+.slideshowStyle {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  /* position: absolute;
+  display: block;
+  margin: auto;
+  margin-bottom: 10rem;
+  width: 10%;
+  padding: 5rem;
+  transition: all .5s;
+  background-color: rgb(2, 77, 140, 0%);
+  animation: fader 2s; */
+
+}
+
+.mainImg {
+  transition: ease-in .5s;
+  animation: fader 2s;
+  height: 10px;
+  width: 50rem;
+  margin: auto;
+  margin: bottom 5rem; ;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fader {
+  from { opacity: 1.0; }
+  to   { opacity: 0.0; }
+}
+
+.actionsLeft {
+  position: absolute;
+  top: 75%;
+  left: 50px;
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 50%;
+  transition: all .5s;
+}
+.actionsRight {
+  position: absolute;
+  top: 75%;
+  right: 50px;
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 50%;
+  transition: all .5s;
+}
+
+.actionsLeft button, .actionsRight button {
+  background-color: rgb(243, 247, 250, 25%);
+  color: #F3F7FA;
+  border: none;
+  margin-right: 10rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all .5s;
+  border-radius: 100%;
+}
+
+.actionsLeft:hover, .actionsRight:hover {
+  color: #FFD802;
+  opacity: 100%;
+  transition: all .5s;
+}
+
+.dotContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.dotStyles {
+  margin: 5px 5px;
+  cursor: pointer;
+  font-size: 32px;
+  color: #F3F7FA;
+  transition: all .5s;
+}
+
+.dotStyles:hover {
+  color: #FFD802;
+  transition: all .5s;
+}
 
 }
