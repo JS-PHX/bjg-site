@@ -8,7 +8,7 @@ const ImageSlider = ({ slides }) => {
   const divStyles = {
     height: `90%`,
     width: `100%`, 
-    padding: `3rem`,
+    padding: `1rem`,
     marginBottom: `3rem`,
   }  
     
