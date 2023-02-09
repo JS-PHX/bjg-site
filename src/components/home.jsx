@@ -18,12 +18,12 @@ export default function Home(){
             <h2>Welcome to BJG Trucking</h2>
             <div class="text-container reveal fade-bottom">
                 <div class="text-box" className="firstBox">
-                    <h3>BJG Trucking, Inc. is a family owned business founded in 2003 by sister company BJG Grading, Inc.</h3>
+                    <h3>BJG Trucking Inc. is a family owned business founded in 2003 by sister company BJG Grading Inc.</h3>
                 </div>
             </div>
             <div class="text-container reveal fade-bottom">
                 <div class="text-box" className="secondBox">
-                    <h3>We bring our customers over 15 years of experience in the industry. Keeping quality and competitive prices a priority.</h3>
+                    <h3>We bring our customers over 15 years of experience in the industry, keeping quality and competitive prices a priority.</h3>
                 </div>
             </div>
             <div class="text-container reveal fade-bottom">
