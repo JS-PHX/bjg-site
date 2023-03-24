@@ -324,11 +324,14 @@ section .text-container .text-box h3 {
   0% {
     transform: translateY(50px);
     opacity: 0;
-    
+    filter: blur(15px);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateY(0);
     opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
   }
 }
 @keyframes fade-left {
