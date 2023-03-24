@@ -206,7 +206,7 @@ section .text-container {
   font-size: 44px;
   z-index: 0;
   transition: ease all .5s;
-  background-color: rgba(1, 39, 89, 0.33);
+  background-color: rgba(1, 39, 89, 0.75);
   border-radius: 1rem;
   font-family: 'Oswald', sans-serif;
 }
@@ -219,7 +219,7 @@ section .text-container {
   font-size: 44px;
   z-index: 0;
   transition: ease all .5s;
-  background-color: rgba(1, 39, 89, 0.33);
+  background-color: rgba(1, 39, 89, 0.75);
   border-radius: 1rem;
   display: block;
   margin-left: auto;
@@ -235,7 +235,7 @@ section .text-container {
   font-size: 44px;
   z-index: 0;
   transition: ease all .5s;
-  background-color: rgba(1, 39, 89, 0.33);
+  background-color: rgba(1, 39, 89, 0.75);
   border-radius: 1rem;
   float: right;
   margin-right: 5rem;
@@ -250,7 +250,7 @@ section .text-container {
   font-size: 38px;
   z-index: 0;
   transition: ease all .5s;
-  background-color: rgba(1, 39, 89, 0.33);
+  background-color: rgba(1, 39, 89, 0.75);
   border-radius: 1rem;
   float: right;
   margin-right: 5rem;
