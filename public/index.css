@@ -606,6 +606,7 @@ textarea:focus {
   }
 
   a {
+    margin: none;
     font-size: 14px;
     margin-right: none;
     margin-left: none;
@@ -633,6 +634,7 @@ textarea:focus {
     z-index: 1;
     height: 60;
     pointer-events: none;
+    position: absolute;
   }
 
   section {
