@@ -306,13 +306,15 @@ section .text-container .text-box h3 {
 .reveal {
   position: relative;
   opacity: 0;
+  transition: all .1s;
 }
 
 .reveal.active {
   opacity: 1;
+  transition: all .1s;
 }
 .active.fade-bottom {
-  animation: fade-bottom .1s ease-in;
+  animation: fade-bottom 1s ease-in;
 }
 .active.fade-left {
   animation: fade-left 1s ease-in;
