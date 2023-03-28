@@ -12,7 +12,7 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-            <Route path="/Home" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/EmailForm" element={<ContactUs />} />
             <Route exact path="/gallery" element={<Gallery />} />
