@@ -314,7 +314,7 @@ section .text-container .text-box h3 {
   transition: all .1s;
 }
 .active.fade-bottom {
-  animation: fade-bottom 1s ease-in;
+  animation: fade-bottom .1s ease-in;
 }
 .active.fade-left {
   animation: fade-left 1s ease-in;
