@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion"
+import ScrollSnap from "react-scroll-snap";
 
 export default function Home(){
     return (
@@ -16,17 +17,17 @@ export default function Home(){
                 Our plant accounts through out the valley and a fleet of dump trucks allow us to arrive at job site in a timely manner and keep costs down. We are here to serve your trucking needs.">About Us</p>} */}
         <section class="container">
             <h2>Welcome to BJG Trucking</h2>
-            <div class="text-container reveal fade-bottom">
+            <div class="text-container reveal fade-left">
                 <div class="text-box" className="firstBox">
                     <h3>BJG Trucking Inc. is a family owned business founded in 2003 by sister company BJG Grading Inc.</h3>
                 </div>
             </div>
-            <div class="text-container reveal fade-bottom">
+            <div class="text-container reveal fade-left">
                 <div class="text-box" className="secondBox">
                     <h3>We bring our customers over 15 years of experience in the industry, keeping quality and competitive prices a priority.</h3>
                 </div>
             </div>
-            <div class="text-container reveal fade-bottom">
+            <div class="text-container reveal fade-left">
                 <div class="text-box" className="thirdBox">
                     <h3>Our plant accounts throughout the valley, and a fleet of dump trucks allow us to arrive at job site in a timely manner, and keep costs down. We are here to serve your trucking needs.</h3>
                 </div>
