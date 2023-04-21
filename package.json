@@ -9,11 +9,13 @@
     "emailjs-com": "^3.2.0",
     "framer-motion": "^8.5.2",
     "react": "^18.2.0",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "react-scroll-snap": "^1.0.0",
+    "react-slick": "^0.29.0",
     "swup": "^3.0.2",
     "web-vitals": "^2.1.4"
   },

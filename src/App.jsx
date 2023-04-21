@@ -6,12 +6,13 @@ import Nav from "./components/nav"
 import Footer from "./components/footer"
 // import { Routes, Route } from 'react-router-dom'
 import AnimatedRoutes from "./components/AnimatedRoutes"
+import mobileNav from "./components/mobileNav"
 
 export default function App(){
     return (
         <>
             <Nav />
-
+            <mobileNav />
         <div>
                 <AnimatedRoutes />
         </div>

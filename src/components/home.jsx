@@ -1,6 +1,5 @@
 
 import { motion } from "framer-motion"
-import ScrollSnap from "react-scroll-snap";
 
 export default function Home(){
     return (
