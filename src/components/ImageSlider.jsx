@@ -55,12 +55,12 @@
 
 // return(
 //     <div style={divStyles}>
-//         <div className='actionsLeft' onClick={goToPrevious}>◄</div>
-//         <div className='actionsRight' onClick={goToNext}>►</div>
-//         <div className="slideshowStyle" style={slideStyles}></div>
-//         <div className='dotContainer'>
+//         <div class='actionsLeft' onClick={goToPrevious}>◄</div>
+//         <div class='actionsRight' onClick={goToNext}>►</div>
+//         <div class="slideshowStyle" style={slideStyles}></div>
+//         <div class='dotContainer'>
 //             {slides.map((slide, slideIndex) => (
-//                 <div className='dotStyles' key={slideIndex} onClick={() => goToSlide(slideIndex)}>•</div>
+//                 <div class='dotStyles' key={slideIndex} onClick={() => goToSlide(slideIndex)}>•</div>
 //                 ))}
 //         </div>
 //     </div>

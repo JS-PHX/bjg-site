@@ -23,7 +23,7 @@ import { motion } from "framer-motion";
 //             animate={{opacity: 1}}
 //             exit={{opacity: 0, transition: {duration: .01}}}
 //         >
-//             <h1 className="slideTitle">Gallery</h1>
+//             <h1 class="slideTitle">Gallery</h1>
 //             <ImageSlider slides={slides} />
 //         </motion.div>
 //     )
@@ -60,16 +60,16 @@ const Gallery = () => {
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         exit={{opacity: 0, transition: {duration: .01}}}
-        className="gallery-container">
-    <h1 className="slideTitle">Gallery</h1>
-      <img src={images[currentIndex].src} alt="" className="slideshowStyle" />
-      <button onClick={handlePrevClick} className="actionsLeft">←</button>
-      <button onClick={handleNextClick} className="actionsRight">→</button>
-      <div className="gallery-dots">
+        class="gallery-container">
+    <h1 class="slideTitle">Gallery</h1>
+      <img src={images[currentIndex].src} alt="" class="slideshowStyle" />
+      <button onClick={handlePrevClick} class="actionsLeft">←</button>
+      <button onClick={handleNextClick} class="actionsRight">→</button>
+      <div class="gallery-dots">
         {images.map((_, index) => (
           <span
             key={index}
-            className={`gallery-dot ${index === currentIndex ? 'active' : ''}`}
+            class={`gallery-dot ${index === currentIndex ? 'active' : ''}`}
             onClick={() => setCurrentIndex(index)}
           />
         ))}

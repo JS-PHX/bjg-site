@@ -23,17 +23,17 @@ export const ContactUs = () => {
   };
 
   return (
-    <motion.div className='message'
+    <motion.div class='message'
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0, transition: {duration: .01}}}
     >
     <form ref={form} onSubmit={sendEmail}>
-      <h1 className='contactTitle'>Contact Us</h1>
+      <h1 class='contactTitle'>Contact Us</h1>
       <input placeholder="Name" type="text" name="user_name" />
       <input placeholder="E-Mail" type="email" name="user_email" /><br /><br />
       <textarea placeholder="Message" name="message" />
-      <input className="emailButton" type="submit" value="SEND" />
+      <input class="emailButton" type="submit" value="SEND" />
     </form>
     </motion.div>
   );
