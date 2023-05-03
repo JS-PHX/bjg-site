@@ -1,5 +1,7 @@
 {
+  "name": "bjg2023-app",
   "version": "0.1.0",
+  "homepage": "https://js-phx.github.io/bjg2023/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
