@@ -1,17 +1,37 @@
 import { Link } from "react-router-dom";
 
-export default function Nav(){
+export default function Nav() {
     return (
-        <header>
-        <nav class="navbar">
-                <p><Link class="navLinks" to="/home">Home</Link></p>
-                <p><Link class="navLinks" to="/EmailForm">Contact</Link></p>
-                <p><Link class="navLinks" to="/gallery">Gallery</Link></p>
+      <header>
+        <nav className="navbar">
+          <div className="navbar-links">
+            <p>
+              <Link className="navLinks" to="/home">
+                Home
+              </Link>
+            </p>
+            <p>
+              {/* <Link className="navLinks" to="/gallery">
+                Gallery
+              </Link> */}
+            </p>
+            <p>
+              {/* <Link className="navLinks" to="/EmailForm">
+                Contact
+              </Link> */}
+            </p>
+          </div>
+          <div className="navbar-logo">
             <Link to="/">
-                <img class="logoLink" src="./pics/TruckLogo.png" alt="logo"></img>
+              <img
+                className="logoLink"
+                src="./pics/TruckLogo.png"
+                alt="logo"
+              ></img>
             </Link>
-            <h1 class="title">BJG Trucking</h1>
+          </div>
         </nav>
-        </header>
-    )
-}
+      </header>
+    );
+  }
+  

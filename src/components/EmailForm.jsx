@@ -29,7 +29,7 @@ export const ContactUs = () => {
             exit={{opacity: 0, transition: {duration: .01}}}
     >
     <form ref={form} onSubmit={sendEmail}>
-      <h1 class='contactTitle'>Contact Us</h1>
+      <p class='contactTitle'>Contact Us</p>
       <input placeholder="Name" type="text" name="user_name" />
       <input placeholder="E-Mail" type="email" name="user_email" /><br /><br />
       <textarea placeholder="Message" name="message" />
