@@ -24,7 +24,7 @@ export default function Nav() {
           <Link class="navLinks" to="/" onClick={toggleNav}>
             Home
           </Link>
-          <Link class="navLinks" to="/EmailForm" onClick={toggleNav}>
+          <Link class="navLinks" to="/ContactUs" onClick={toggleNav}>
             Contact
           </Link>
           <Link class="navLinks" to="/gallery" onClick={toggleNav}>

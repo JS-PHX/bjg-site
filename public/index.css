@@ -60,6 +60,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .menu {
@@ -273,7 +274,7 @@ section .text-container {
   margin-left: 5rem;
   float: left;
   padding: 2rem;
-  width: 70%;
+  width: 100vh;
   font-size: 40px;
   z-index: 0;
   transition: ease all .5s;
@@ -288,7 +289,7 @@ section .text-container {
   margin-top: 15rem;
   margin-bottom: 5rem;
   padding: 2rem;
-  width: 70%;
+  width: 100vh;
   font-size: 40px;
   z-index: 0;
   transition: ease all 1s;
@@ -307,7 +308,7 @@ section .text-container {
   margin-top: 15rem;
   margin-bottom: 5rem;
   padding: 2rem;
-  width: 70%;
+  width: 100vh;
   font-size: 40px;
   z-index: 0;
   transition: ease all 1s;
@@ -419,7 +420,7 @@ section .text-container .text-box h3 {
 }
 @keyframes fade-left {
   0% {
-    transform: translateX(-75%);
+    transform: translateX(-25%);
     opacity: 0;
   }
   100% {
