@@ -1,3 +1,4 @@
 {
-    "colorize.decoration_type": "underline"
+    "colorize.decoration_type": "underline",
+    "liveServer.settings.port": 5501
 }
