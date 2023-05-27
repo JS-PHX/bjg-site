@@ -20,22 +20,22 @@ export default function Home(){
                 <span class="underline-hover">Welcome to BJG Trucking</span>
             </p>
         </div>
-            <div class="text-container reveal fade-left">
+            <div class="text-container1 reveal fade-bottom">
                 <div  class="firstBox">
                     <h3>BJG Trucking Inc. is a family owned business founded in 2003 by sister company BJG Grading Inc.</h3>
                 </div>
             </div>
-            <div class="text-container reveal fade-left">
+            <div class="text-container2 reveal fade-bottom">
                 <div class="secondBox">
                     <h3>We bring our customers over 15 years of experience in the industry, keeping quality and competitive prices a priority.</h3>
                 </div>
             </div>
-            <div class="text-container reveal fade-left">
+            <div class="text-container3 reveal fade-bottom">
                 <div  class="thirdBox">
                     <h3>Our plant accounts throughout the valley, and a fleet of dump trucks allow us to arrive at job site in a timely manner, and keep costs down. We are here to serve your trucking needs.</h3>
                 </div>
             </div>
-            <div class="text-container reveal fade-bottom">
+            <div class="text-container4 reveal fade-bottom">
                 <div class="contactBox" style={{float:"right", marginLeft:"5rem", width:"auto"}}>
                     <h3>Contact</h3>
                     <h3>Phone: (602) 200-7028</h3>

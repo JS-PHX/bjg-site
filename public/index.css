@@ -194,7 +194,7 @@ section h1 {
 section p {
   margin: auto;
   margin-top: 15rem;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
   font-size: 116px;
   width: 100%;
   text-align: center;
@@ -249,12 +249,40 @@ section p {
   to {color: inherit;}
 }
 
-section .text-container {
+section .text-container1 {
   display: inline-block;
   margin: auto;
   width: 100%;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  height: 100vh;
+  background-color: rgb(1, 39, 89, .75);  
+  margin-top: 4rem;
+  backdrop-filter: blur(10px);
+}
+section .text-container2 {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  background-color: rgb(1, 39, 89, .75);  
+  height: 100vh;
+  backdrop-filter: blur(10px);
+
+}
+section .text-container3 {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  background-color: rgb(1, 39, 89, .75);  
+  height: 100vh;
+  backdrop-filter: blur(10px);
+
+}
+section .text-container4 {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  background-color: rgb(1, 39, 89, .75);  
+  height: auto;
+  backdrop-filter: blur(10px);
 }
 /* section .text-container .text-box {
   margin-top: 15rem;
@@ -275,10 +303,10 @@ section .text-container {
   float: left;
   padding: 2rem;
   width: 100vh;
-  font-size: 40px;
+  font-size: 48px;
   z-index: 0;
   transition: ease all .5s;
-  background-color: rgba(1, 39, 89, 0.75);
+  /* background-color: rgba(1, 39, 89, 0.75); */
   border-radius: 5px;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 5rem;
@@ -290,10 +318,10 @@ section .text-container {
   margin-bottom: 5rem;
   padding: 2rem;
   width: 100vh;
-  font-size: 40px;
+  font-size: 48px;
   z-index: 0;
   transition: ease all 1s;
-  background-color: rgba(1, 39, 89, 0.75);
+  /* background-color: rgba(1, 39, 89, 0.75); */
   border-radius: 5px;
   display: block;
   margin-left: auto;
@@ -309,10 +337,10 @@ section .text-container {
   margin-bottom: 5rem;
   padding: 2rem;
   width: 100vh;
-  font-size: 40px;
+  font-size: 48px;
   z-index: 0;
   transition: ease all 1s;
-  background-color: rgba(1, 39, 89, 0.75);
+  /* background-color: rgba(1, 39, 89, 0.75); */
   border-radius: 5px;
   float: right;
   margin-right: 5rem;
@@ -330,7 +358,7 @@ section .text-container {
   font-size: 38px;
   z-index: 0;
   transition: ease all 1s;
-  background-color: rgba(1, 39, 89, 0.75);
+  /* background-color: rgba(1, 39, 89, 0.75); */
   border-radius: 5px;
   float: right;
   margin-right: 5rem;
@@ -353,7 +381,7 @@ section .text-container {
   transition: ease all .5s;
   -webkit-transform: scale(1.05);
 	transform: scale(1.05);
-  background-color: #012759;
+  background-color: rgb(119, 133, 172, .75);
 }
 
 section .text-container .text-box h3 {
@@ -388,7 +416,7 @@ section .text-container .text-box h3 {
 .reveal {
   position: relative;
   opacity: 0;
-  transition: all 5s;
+  transition: all 2s;
 }
 
 .reveal.active {
@@ -406,16 +434,11 @@ section .text-container .text-box h3 {
 }
 @keyframes fade-bottom {
   0% {
-    transform: translateY(50px);
+    transform: translateY(75px);
     opacity: 0;
-    filter: blur(25px);
-    transform: translateX(-100%);
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
   }
 }
 @keyframes fade-left {
