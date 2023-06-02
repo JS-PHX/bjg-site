@@ -34,6 +34,12 @@ div {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.progress-bar {
+  height: 5px;
+  background-color: #FFD802;
+  z-index: 999;
+  position: fixed ;
+}
 
 header {
   margin: 0px;
@@ -141,10 +147,13 @@ header {
   -webkit-background-clip: text,padding-box;
   background-clip: text,padding-box;
   transition: .1s var(--_s,0s) linear,background-size .2s calc(.3s - var(--_s,0s));
+  transition: all 0.3s ease-in-out;
 }
 .logoLink:hover {
   --_p: 100%;
   --_s: .2s;
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -254,7 +263,7 @@ section .text-container1 {
   margin: auto;
   width: 100%;
   height: 100vh;
-  background-color: rgb(1, 39, 89, .75);  
+  background-color: rgb(1, 39, 89, .5);  
   margin-top: 4rem;
   backdrop-filter: blur(10px);
 }
@@ -262,10 +271,9 @@ section .text-container2 {
   display: inline-block;
   margin: auto;
   width: 100%;
-  background-color: rgb(1, 39, 89, .75);  
+  background-color: rgb(1, 39, 89, .5);  
   height: 100vh;
   backdrop-filter: blur(10px);
-
 }
 section .text-container3 {
   display: inline-block;
@@ -274,7 +282,6 @@ section .text-container3 {
   background-color: rgb(1, 39, 89, .75);  
   height: 100vh;
   backdrop-filter: blur(10px);
-
 }
 section .text-container4 {
   display: inline-block;
@@ -301,9 +308,9 @@ section .text-container4 {
   margin-bottom: 5rem;
   margin-left: 5rem;
   float: left;
-  padding: 2rem;
+  padding: 3rem;
   width: 100vh;
-  font-size: 48px;
+  font-size: 56px;
   z-index: 0;
   transition: ease all .5s;
   /* background-color: rgba(1, 39, 89, 0.75); */
@@ -316,9 +323,9 @@ section .text-container4 {
 .secondBox {
   margin-top: 15rem;
   margin-bottom: 5rem;
-  padding: 2rem;
+  padding: 3rem;
   width: 100vh;
-  font-size: 48px;
+  font-size: 56px;
   z-index: 0;
   transition: ease all 1s;
   /* background-color: rgba(1, 39, 89, 0.75); */
@@ -336,7 +343,7 @@ section .text-container4 {
   margin-top: 15rem;
   margin-bottom: 5rem;
   padding: 2rem;
-  width: 100vh;
+  width: 60%;
   font-size: 48px;
   z-index: 0;
   transition: ease all 1s;
@@ -355,7 +362,7 @@ section .text-container4 {
   margin-bottom: 5rem;
   padding: 2rem;
   width: 45%;
-  font-size: 38px;
+  font-size: 40px;
   z-index: 0;
   transition: ease all 1s;
   /* background-color: rgba(1, 39, 89, 0.75); */
@@ -365,7 +372,7 @@ section .text-container4 {
   font-family: 'Roboto Condensed', sans-serif;
   margin-left: 5rem;
   line-height: 5rem;
-  text-align: center;
+  text-align: left;
 }
 
 

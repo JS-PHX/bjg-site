@@ -15,6 +15,8 @@
     </head>
 
     <body>
+        <div class="progress-bar"></div>
+        
         <div id="root"></div>
         <script src="/index.js"></script>
         <script>
@@ -38,6 +40,19 @@
 
                 window.onbeforeunload = function () {
                 window.scrollTo(0, 0);}
+
+                document.addEventListener('DOMContentLoaded', function() {
+                let progressBar = document.querySelector('.progress-bar');
+
+                window.addEventListener("scroll", function() {
+                let scrollPos = window.scrollY;
+                let documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+                let percentScrolled = (scrollPos / documentHeight) * 100;
+                let progressBar = document.querySelector(".progress-bar");
+                progressBar.style.width = percentScrolled + "%";
+            });
+        })
+
         </script>
     </body>
 </html>
