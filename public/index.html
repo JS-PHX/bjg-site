@@ -21,20 +21,31 @@
         <script src="/index.js"></script>
         <script>
             function reveal() {
-                var reveals = document.querySelectorAll(".reveal");
+            var reveals = document.querySelectorAll(".reveal");
+
+            function checkVisibility() {
+                var windowHeight = window.innerHeight;
+                var scrollY = window.scrollY || window.pageYOffset;
 
                 for (var i = 0; i < reveals.length; i++) {
-                    var windowHeight = window.innerHeight;
-                    var elementTop = reveals[i].getBoundingClientRect().top;
-                    var elementVisible = 150;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
 
-                    if (elementTop < windowHeight - elementVisible) {
+                if (elementTop < windowHeight - elementVisible + scrollY) {
                     reveals[i].classList.add("active");
-                    } else {
+                } else {
                     reveals[i].classList.remove("active");
-                    }
                 }
                 }
+                }
+
+                // Initial check when the function is first called
+                checkVisibility();
+
+                // Check visibility on scroll
+                window.addEventListener("scroll", checkVisibility);
+                }
+
 
                 window.addEventListener("scroll", reveal);
 

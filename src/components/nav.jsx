@@ -11,14 +11,14 @@ export default function Nav() {
               </Link>
             </p>
             <p>
-              {/* <Link className="navLinks" to="/gallery">
+              <Link className="navLinks" to="/gallery">
                 Gallery
-              </Link> */}
+              </Link>
             </p>
             <p>
-              {/* <Link className="navLinks" to="/EmailForm">
+              <Link className="navLinks" to="/EmailForm">
                 Contact
-              </Link> */}
+              </Link>
             </p>
           </div>
           <div className="navbar-logo">

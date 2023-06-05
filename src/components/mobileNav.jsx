@@ -1,33 +1,35 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Nav() {
-    const [showNav, setShowNav] = useState(false);
-  
-    const toggleNav = () => {
-        setShowNav(!showNav);
-      };
+export default function MobileNav() {
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNav = () => {
+    setShowNav(prevShowNav => !prevShowNav);
+  };
 
   return (
     <header>
-      <nav class="navbar">
-        <div class="nav-container">
-          <button class="hamburger-btn" onClick={toggleNav}>
-            <span class="hamburger-icon"></span>
+      <nav className="navbar">
+        <div className="nav-container">
+          <div className="logo-container">
+            <Link to="/">
+              <img className="logoLink" src="./pics/TruckLogo.png" alt="logo" />
+            </Link>
+            <h1 className="title">BJG Trucking</h1>
+          </div>
+          <button className={`hamburger-btn ${showNav ? "open" : ""}`} onClick={toggleNav}>
+            <span className="hamburger-icon"></span>
           </button>
-          <Link to="/">
-            <img class="logoLink" src="./pics/TruckLogo.png" alt="logo"></img>
-          </Link>
-          <h1 class="title">BJG Trucking</h1>
         </div>
-        <div class={`nav-links ${showNav ? "show-nav" : ""}`}>
-          <Link class="navLinks" to="/" onClick={toggleNav}>
+        <div className={`nav-links ${showNav ? "show-nav" : ""}`}>
+          <Link className="navLink" to="/" onClick={toggleNav}>
             Home
           </Link>
-          <Link class="navLinks" to="/ContactUs" onClick={toggleNav}>
+          <Link className="navLink" to="/ContactUs" onClick={toggleNav}>
             Contact
           </Link>
-          <Link class="navLinks" to="/gallery" onClick={toggleNav}>
+          <Link className="navLink" to="/gallery" onClick={toggleNav}>
             Gallery
           </Link>
         </div>
@@ -35,3 +37,4 @@ export default function Nav() {
     </header>
   );
 }
+
