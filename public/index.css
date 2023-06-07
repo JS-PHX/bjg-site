@@ -892,7 +892,7 @@ textarea {
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 100px; /* Adjust this value according to your navbar height */
+    top: 100px; 
     left: 0;
     right: 0;
     bottom: 0;
@@ -912,7 +912,6 @@ textarea {
     border-bottom: solid 2px white;
   }
   
-  /* Show the hamburger button */
   .hamburger-btn {
     display: flex;
     align-items: center;
@@ -971,7 +970,7 @@ textarea {
   .nav-links a {
     display: block;
     margin-bottom: 10px;
-    color: #000;
+    color: rgb(255, 0, 0);
     text-decoration: none;
     font-size: 16px;
   }
