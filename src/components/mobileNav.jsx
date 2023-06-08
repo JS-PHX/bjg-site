@@ -23,13 +23,13 @@ export default function MobileNav() {
           </button>
         </div>
         <div className={`nav-links ${showNav ? "show-nav" : ""}`}>
-          <Link className="navLink" to="/" onClick={toggleNav}>
+          <Link className="navLinks" to="/" onClick={toggleNav}>
             Home
           </Link>
-          <Link className="navLink" to="/ContactUs" onClick={toggleNav}>
+          <Link className="navLinks" to="/ContactUs" onClick={toggleNav}>
             Contact
           </Link>
-          <Link className="navLink" to="/gallery" onClick={toggleNav}>
+          <Link className="navLinks" to="/gallery" onClick={toggleNav}>
             Gallery
           </Link>
         </div>

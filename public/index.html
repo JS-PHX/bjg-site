@@ -22,29 +22,33 @@
         <script>
             function reveal() {
             var reveals = document.querySelectorAll(".reveal");
+            var lastScrollPos = 0;
 
-            function checkVisibility() {
-                var windowHeight = window.innerHeight;
-                var scrollY = window.scrollY || window.pageYOffset;
+            function revealElements() {
+                var currentScrollPos = window.scrollY || window.pageYOffset;
+                var scrollDirection = currentScrollPos > lastScrollPos ? "down" : "up";
+                
+                reveals.forEach(reveal => {
+                var revealTop = reveal.getBoundingClientRect().top;
+                var revealOffset = window.innerHeight * 0.75;
 
-                for (var i = 0; i < reveals.length; i++) {
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible + scrollY) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
+                if (scrollDirection === "down" && revealTop < revealOffset) {
+                    reveal.classList.add("active");
+                } else if (scrollDirection === "up" && revealTop > revealOffset) {
+                    reveal.classList.remove("active");
                 }
-                }
-                }
+                });
 
-                // Initial check when the function is first called
-                checkVisibility();
+                lastScrollPos = currentScrollPos;
+            }
 
-                // Check visibility on scroll
-                window.addEventListener("scroll", checkVisibility);
-                }
+            window.addEventListener("scroll", revealElements);
+            }
+
+            reveal();
+
+
+
 
 
                 window.addEventListener("scroll", reveal);

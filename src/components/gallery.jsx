@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from "framer-motion";
-
+import { motion } from 'framer-motion';
 
 const Gallery = () => {
   const images = [
-    { src: '/pics/bjg.jpg' },
-    { src: '/pics/bjg-bg.jpg' },
-    { src: '/pics/rock.jpg' },
+    { src: './pics/bjg.jpg' },
+    { src: './pics/bjg-bg.jpg' },
+    { src: './pics/rock.jpg' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,20 +26,27 @@ const Gallery = () => {
   }, [currentIndex]);
 
   return (
-    <motion.div 
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        exit={{opacity: 0, transition: {duration: .01}}}
-        class="gallery-container">
-    <h1 class="slideTitle">Gallery</h1>
-      <img src={images[currentIndex].src} alt="" class="slideshowStyle" />
-      <button onClick={handlePrevClick} class="actionsLeft">←</button>
-      <button onClick={handleNextClick} class="actionsRight">→</button>
-      <div class="gallery-dots">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.01 } }}
+      className="gallery-container"
+    >
+      <h1 className="slideTitle">Gallery</h1>
+      <div className="imageWrapper">
+        <img src={images[currentIndex].src} alt="" className="slideshowStyle" />
+      </div>
+      <button onClick={handlePrevClick} className="actionsLeft">
+        ←
+      </button>
+      <button onClick={handleNextClick} className="actionsRight">
+        →
+      </button>
+      <div className="gallery-dots">
         {images.map((_, index) => (
           <span
             key={index}
-            class={`gallery-dot ${index === currentIndex ? 'active' : ''}`}
+            className={`gallery-dot ${index === currentIndex ? 'active' : ''}`}
             onClick={() => setCurrentIndex(index)}
           />
         ))}

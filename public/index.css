@@ -35,7 +35,7 @@ div {
   background-size: cover;
 }
 .progress-bar {
-  height: 5px;
+  height: 3px;
   background-color: #FFD802;
   z-index: 999;
   position: fixed ;
@@ -79,7 +79,8 @@ header {
 }
 
 .title {
-  margin-top: 2.75rem;
+  margin-top: 3.5rem;
+  padding-bottom: 1rem;
   font-size: 38px;
   float: left;
   color: #F3F7FA;
@@ -120,11 +121,16 @@ header {
     linear-gradient(var(--c) 0 0) 50% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
   -webkit-background-clip: text,padding-box;
           background-clip: text,padding-box;
-  transition: .1s var(--_s,0s) linear,background-size .2s calc(.1s - var(--_s,0s));
+  transition: .1s var(--_s,0s) linear,background-size .1s calc(.1s - var(--_s,0s));
 }
 .navLinks:hover {
   --_p: 100%;
-  --_s: .2s;
+  --_s: .1s;
+}
+.navLinks:active {
+  transform: scale(1.05);
+  color: rgb(119, 133, 172);
+  transition: all .001s;
 }
 
 .nav-links.show-nav {
@@ -134,9 +140,9 @@ header {
 
 .logoLink {
   margin-left: 2em;
-  margin-top: .5rem;
+  margin-top: 1.5rem;
   float: left;
-  padding: 0px;
+  padding: 5px;
   background-color: transparent;
   overflow: hidden;
   z-index: 1;
@@ -153,8 +159,12 @@ header {
 .logoLink:hover {
   --_p: 100%;
   --_s: .2s;
-  transform: scale(1.02);
+  transform: scale(1.01);
   transition: all 0.3s ease-in-out;
+}
+.logoLink:active {
+  transform: scale(1.03);
+  transition: all 0.01s ease-in-out;
 }
 
 
@@ -272,33 +282,33 @@ section .text-container1 {
   margin: auto;
   width: 100%;
   height: 100vh;
-  background-color: rgb(1, 39, 89, .5);  
+  background: linear-gradient(to bottom, #01275900, #01275999);
   margin-top: 4rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 section .text-container2 {
   display: inline-block;
   margin: auto;
   width: 100%;
-  background-color: rgb(1, 39, 89, .5);  
+  background: linear-gradient(to bottom, #01275999, #012759bb);
   height: 100vh;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 section .text-container3 {
   display: inline-block;
   margin: auto;
   width: 100%;
-  background-color: rgb(1, 39, 89, .5);  
+  background: linear-gradient(to bottom, #012759bb, #012759dd);
   height: 100vh;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 section .text-container4 {
   display: inline-block;
   margin: auto;
   width: 100%;
-  background-color: rgb(1, 39, 89, .5);  
+  background: linear-gradient(to bottom, #012759dd, #012759ff);
   height: auto;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 /* section .text-container .text-box {
   margin-top: 15rem;
@@ -353,7 +363,7 @@ section .text-container4 {
   margin-bottom: 5rem;
   padding: 2rem;
   width: 60%;
-  font-size: 44px;
+  font-size: 40px;
   z-index: 0;
   transition: ease all 1s;
   /* background-color: rgba(1, 39, 89, 0.75); */
@@ -370,7 +380,7 @@ section .text-container4 {
   margin-top: 10rem;
   margin-bottom: 5rem;
   padding: 2rem;
-  width: 45%;
+  width: 33%;
   font-size: 40px;
   z-index: 0;
   transition: ease all 1s;
@@ -381,8 +391,25 @@ section .text-container4 {
   font-family: 'Roboto Condensed', sans-serif;
   margin-left: 5rem;
   line-height: 5rem;
-  text-align: left;
+  text-align: center;
 }
+
+.contactNum {
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contactNum p{
+  font-size: 32px;
+  color: #F3F7FA;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  text-shadow: none;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
 
 
 /* section .text-container .text-box:hover {
@@ -418,7 +445,7 @@ section .text-container .text-box h3 {
 }
 
 
-
+/* 
 @media (max-width: 900px) {
   section h1 {
     font-size: 2rem;
@@ -427,20 +454,27 @@ section .text-container .text-box h3 {
   section .text-container {
     flex-direction: column;
   }
-}
+} */
 
 .reveal {
-  position: relative;
   opacity: 0;
-  transition: all 2s;
+  transition: opacity .5s;
 }
 
 .reveal.active {
   opacity: 1;
-  transition: all 1s;
+  transition: opacity .5s;
 }
+
+
+
+
+.hidden {
+  opacity: 0;
+}
+
 .active.fade-bottom {
-  animation: fade-bottom .75s ease-in;
+  animation: fade-bottom .5s ease-in;
 }
 .active.fade-left {
   animation: fade-left 1s ease-in;
@@ -450,7 +484,7 @@ section .text-container .text-box h3 {
 }
 @keyframes fade-bottom {
   0% {
-    transform: translateY(25%);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
@@ -459,7 +493,7 @@ section .text-container .text-box h3 {
 }
 @keyframes fade-left {
   0% {
-    transform: translateX(-25%);
+    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
@@ -526,7 +560,8 @@ footer {
 }
 
 form {
-  background-color: rgb(119, 133, 172, .75);
+  background-color: rgb(119, 133, 172, .5);
+  /* backdrop-filter: blur(10px); */
   /* background-image: url(pics/rock.jpg); */
   color: #F3F7FA;
   width: 50%;
@@ -544,6 +579,9 @@ form {
   margin-top: 2.5rem;
   margin-bottom: 10rem;
   border-radius: 1rem;
+}
+form:hover {
+  backdrop-filter: blur(10px);
 }
 
 /* form:hover {
@@ -614,6 +652,13 @@ textarea {
   color: #F3F7FA;
 }
 
+
+
+
+
+
+/* slideshow */
+
 .slideTitle {
   color: #F3F7FA;
   font-size: 48px;
@@ -656,47 +701,79 @@ textarea {
   height: 30rem;
   width: 50rem;
   margin: auto;
-  margin: bottom 5rem;
   display: block;
   align-items: center;
   justify-content: center;
   position: absolute;
 }
 
+.imageWrapper {
+  width: 75%;
+  max-width: 1200px; /* Adjust the max-width value to your desired width */
+  height: 0;
+  padding-bottom: 75%; /* Adjust the padding-bottom value to maintain the desired aspect ratio */
+  position: relative;
+  margin: 0 auto; /* Center the image horizontally */
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
 @keyframes fader {
   from { opacity: 1.0; }
   to   { opacity: 0.0; }
 }
 
+.gallery-container {
+  position: relative;
+}
+
 .actionsLeft {
   position: absolute;
-  margin: auto;
-  top: 75%;
-  left: 100;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
   font-size: 4rem;
   width: 5rem;
   color: #FFD802;
   background-color: rgb(255, 255, 255, 0);
   z-index: 1;
   cursor: pointer;
-  opacity: 50%;
+  opacity: 75%;
   transition: all .5s;
+  border: none;
   border-radius: 100%;
 }
+
 .actionsRight {
   position: absolute;
-  top: 75%;
-  right:100;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
   font-size: 4rem;
   width: 5rem;
   color: #FFD802;
   background-color: rgb(255, 255, 255, 0);
   z-index: 1;
   cursor: pointer;
-  opacity: 50%;
+  opacity: 75%;
   transition: all .5s;
+  border: none;
   border-radius: 100%;
+
 }
+
 
 .actionsLeft button, .actionsRight button {
   background-color: rgb(243, 247, 250, 25%);
@@ -711,40 +788,30 @@ textarea {
 
 .actionsLeft:hover, .actionsRight:hover {
   color: #FFD802;
-  background-color: #012759;
+  background-color: rgb(119, 133, 172, .75);
   opacity: 100%;
   transition: all .5s;
 }
 
-/* .dotContainer {
-  display: flex;
-  justify-content: center;
+.actionsLeft:active, .actionsRight:active {
+  background-color: #012759;
+  transition: all .1s;
 }
 
-.dotStyles {
-  margin: 5px 5px;
-  cursor: pointer;
-  font-size: 32px;
-  color: #F3F7FA;
-  transition: all .5s;
-} */
 
-.dotStyles:hover {
-  color: #FFD802;
-  transition: all .5s;
-}
 
 .gallery-dots {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin-top: auto;
   margin-bottom: 2rem;
 }
+
 
 .gallery-dot {
   width: 12px;
   height: 12px;
-  margin: 0 8px;
+  margin: 0 10px;
   border-radius: 50%;
   background-color: #ccc;
   cursor: pointer;
@@ -753,17 +820,6 @@ textarea {
 .gallery-dot.active {
   background-color: #FFD802;
 }
-
-/* .slideStyles {
-  width: 75%;
-  height: 100%;
-  background-position: center;
-  background-size: cover; 
-  margin: auto;
-  background-image: url(${slides[currentIndex].url});
-  z-index: -1;
-  border-radius: 10px;
-} */
 
 
 
@@ -788,7 +844,7 @@ textarea {
   }
 } */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .nav-links {
     position: static;
     transform: translateY(0);
@@ -804,7 +860,7 @@ textarea {
     flex-direction: row;
     align-items: center;
   }
-}
+} */
 
 
 @media (max-width: 768px) {
@@ -848,7 +904,7 @@ textarea {
   
   .navbar {
     text-align: right;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     padding: 1px;
     background-color: #012759;
     height: 100px;
@@ -864,13 +920,14 @@ textarea {
   
   .navLinks {
     color: #F3F7FA;
-    margin: auto;
+    margin: 5rem;
     z-index: -999;
     --b: none;
     --c: none;
     padding-block: none;
     background: none;
     transition: all .25s ease-in-out;
+    
   }
   
   .navLinks::after {
@@ -884,6 +941,7 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
     color: white;
+    
   }
   
   .nav-links.show-nav {
@@ -901,15 +959,17 @@ textarea {
     z-index: 999;
     color: white;
     overflow-y: auto;
+    
   }
   
   
   .nav-links.show-nav a {
     color: white;
-    font-size: 40px;
+    font-size: 32px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-bottom: 4rem;
-    border-bottom: solid 2px white;
+    margin-bottom: 1px;
+    border-bottom: solid 1px white;
+
   }
   
   .hamburger-btn {
@@ -1065,7 +1125,7 @@ textarea {
 
   section p {
     margin: auto;
-    margin-top: 12.5rem;
+    margin-top: 15rem;
     margin-bottom: 10rem;
     padding: 2rem;
     font-size: 64px;
@@ -1126,6 +1186,7 @@ textarea {
 
   section .text-container1 {
     display: inline-block;
+    margin-top: 1rem;
     margin: auto;
     width: 100%;
     height: auto;
@@ -1165,11 +1226,13 @@ textarea {
     margin-top: 1rem;
     backdrop-filter: blur(0px);
     padding: 1rem;
-
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;  
   }
 
   .firstBox {
-    margin-top: .5rem;
+    margin-top: 1rem;
     margin-left: 0rem;
     padding: 10px;
     width: 100%;
@@ -1216,6 +1279,7 @@ textarea {
     text-align: center;
   }
   .contactBox {
+    margin: auto;
     margin-top: .5rem;
     padding: 2rem;
     width: 100%;
@@ -1226,6 +1290,9 @@ textarea {
     backdrop-filter: blur(10px);
     border-radius: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .firstBox:hover, .secondBox:hover, .thirdBox:hover, .contactBox:hover {
