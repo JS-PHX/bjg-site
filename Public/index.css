@@ -457,13 +457,13 @@ section .text-container .text-box h3 {
 } */
 
 .reveal {
-  opacity: 0;
-  transition: opacity .5s;
+  opacity: .75;
+  transition: opacity .75s;
 }
 
 .reveal.active {
   opacity: 1;
-  transition: opacity .5s;
+  transition: opacity .75s;
 }
 
 
