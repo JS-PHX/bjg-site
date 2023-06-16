@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/bjg-site/static/js/main.bede3ea2.js",
+    "index.html": "/bjg-site/index.html",
+    "main.bede3ea2.js.map": "/bjg-site/static/js/main.bede3ea2.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.bede3ea2.js"
+  ]
+}
