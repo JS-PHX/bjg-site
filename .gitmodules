@@ -1,0 +1,3 @@
+[submodule "bjg-webapp"]
+	path = bjg-webapp
+	url = https://github.com/JS-PHX/bjg-webapp.git
