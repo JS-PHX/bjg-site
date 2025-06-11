@@ -1,8 +1,10 @@
 export default function Footer() {
+    const currentYear = new Date().getFullYear();
+
     return (
         <div class="footer">
             <footer>
-                <p>2022 BJG. All Rights Reserved</p>
+                <p>{currentYear} BJG. All Rights Reserved</p>
             </footer>
         </div>
     )

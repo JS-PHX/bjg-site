@@ -518,16 +518,19 @@ footer {
   width: 100%;
   text-align: center;
   height: -25px;
-  padding: 5px;
+  padding: 1rem;
   color: #F3F7FA;
   font-size: 10px;
   background-color: #012759;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
-  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   /* negative value of footer height */
   clear: both;
   /* overflow-x: initial !important; */
+  z-index: 1000;
 }
 
 
