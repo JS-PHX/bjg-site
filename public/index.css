@@ -316,7 +316,7 @@ section .text-container4 {
   float: left;
   padding: 3rem;
   width: 100vh;
-  font-size: 44px;
+  font-size: 36px;
   z-index: 0;
   transition: ease all .5s;
   /* background-color: rgba(1, 39, 89, 0.75); */
@@ -331,7 +331,7 @@ section .text-container4 {
   margin-bottom: 5rem;
   padding: 3rem;
   width: 100vh;
-  font-size: 48px;
+  font-size: 36px;
   z-index: 0;
   transition: ease all 1s;
   /* background-color: rgba(1, 39, 89, 0.75); */
@@ -350,7 +350,7 @@ section .text-container4 {
   margin-bottom: 5rem;
   padding: 2rem;
   width: 60%;
-  font-size: 40px;
+  font-size: 36px;
   z-index: 0;
   transition: ease all 1s;
   /* background-color: rgba(1, 39, 89, 0.75); */
