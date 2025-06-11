@@ -647,6 +647,7 @@ textarea {
   outline: #FFD802;
   outline-style: solid;
 	transition: .3s ease-in-out;
+  transition: .3s ease-out;
 }
 
 .emailButton:active {
