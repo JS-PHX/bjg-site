@@ -2,38 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
-body, html {
+html, body {
   background-image: linear-gradient(to top, #00000088 30%, #ffffff44 70%), url(pics/bjg-bg.jpg);
-  margin: 0;
-  padding: 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
-  /* background: -webkit-gradient (linear, 0% 0%, 0% 100%, (#87A0B2, #023e8c,#012759));
-  background: -webkit-linear-gradient(top, #87A0B2, #023e8c,#012759);
-  background: -moz-linear-gradient(top, #87A0B2, #023e8c,#012759);
-  background: -ms-linear-gradient(top, #023e8c, white);
-  background: -o-linear-gradient(top, #023e8c, white);
-  background: linear-gradient(top, #023e8c, white); */
   max-width: 100%;
-  overflow-y: initial !important;
+  overflow-x: hidden;
 }
 
-/* background: linear-gradient(180deg, rgba(2, 62, 140), rgba(2, 62, 140, .25), #F3F7FA); */
-
-
 div {
-  /* background-image: url(./pics/bjg.jpg); */
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .progress-bar {
   height: 3px;
   background-color: #FFD802;
