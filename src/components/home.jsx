@@ -22,17 +22,20 @@ export default function Home(){
   </div>
   <div class="text-container1 reveal fade-bottom">
     <div class="firstBox">
-      <h3>BJG Trucking Inc. is a family owned business founded in 2003 by sister company BJG Grading Inc.</h3>
+      <h3>BJG Trucking Inc. is a family-owned and operated trucking company founded in 2003 as a sister company to BJG Grading Inc. 
+      With a strong foundation in the construction and hauling industry, we proudly serve the Greater Phoenix area and surrounding regions.</h3>
     </div>
   </div>
   <div class="text-container2 reveal">
     <div class="secondBox">
-      <h3>We bring our customers over 15 years of experience in the industry, keeping quality and competitive prices a priority.</h3>
+      <h3>With over 15 years of professional experience, BJG Trucking Inc. is committed to providing dependable, high-quality trucking services. 
+      We prioritize both service excellence and competitive pricing to meet the demands of today’s commercial and industrial job sites.</h3>
     </div>
   </div>
   <div class="text-container3 reveal">
     <div class="thirdBox">
-      <h3>Our plant accounts throughout the valley, and a fleet of dump trucks allow us to arrive at job site in a timely manner, and keep costs down. We are here to serve your trucking needs.</h3>
+      <h3>Our well-maintained fleet of dump trucks and strong network of plant accounts throughout the Valley enable us to deliver materials efficiently and on time. 
+      Whether it’s bulk hauling, construction material transport, or custom trucking needs, we are equipped to support projects of any scale.</h3>
     </div>
   </div>
   <div class="text-container4 reveal">
