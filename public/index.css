@@ -1003,6 +1003,7 @@ textarea {
     height: 3px;
     background-color: #F3F7FA;
     position: absolute;
+    left: 0;
     transition: transform 0.3s ease;
   }
   
@@ -1019,11 +1020,13 @@ textarea {
   }
   
   .hamburger-btn.open .hamburger-icon::before {
-    transform: translateY(8px) rotate(-45deg);
+    transform: rotate(-90deg);
+    top: 0;
   }
   
   .hamburger-btn.open .hamburger-icon::after {
-    transform: translateY(-8px) rotate(-45deg);
+    /* transform: translateY(-8px) rotate(-45deg); */
+    opacity: 0;
   }
         
               
