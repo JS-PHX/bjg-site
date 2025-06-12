@@ -101,10 +101,7 @@ header {
   --b: 1px;   /* the thickness of the line */
   --c: #FFD802; /* the color */
   
-  color: #F3F7FA;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: rgba(161, 8, 8, 0);
   padding-block: var(--b);
   background: 
     linear-gradient(var(--c) 50%,rgb(255, 255, 255) 0) 0% calc(100% - var(--_p,0%))/100% 200%,
@@ -125,10 +122,6 @@ header {
 
 .nav-links.show-nav {
   transform: translateY(0);
-}
-
-.navLinks:focus-visible {
-  outline: 2px solid #FFD802;
 }
 
 
