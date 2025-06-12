@@ -806,8 +806,8 @@ textarea {
 
 
 .gallery-dot {
-  width: 12px;
-  height: 12px;
+  width: clamp(8px, 1vw, 14px);
+  height: clamp(8px, 1vw, 14px);
   margin: 0 10px;
   border-radius: 50%;
   background-color: #ccc;
