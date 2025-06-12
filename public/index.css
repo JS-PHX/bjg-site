@@ -791,7 +791,7 @@ textarea {
 .actionsLeft:active, .actionsRight:active {
   background-color: #012759;
   transition: all .1s;
-  transform: scale(0.95);
+  transform: scale(0.5);
   background-color: #012759;
 }
 
