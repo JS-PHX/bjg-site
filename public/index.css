@@ -1360,7 +1360,7 @@ form {
   margin: auto;
   margin-top: 5rem;
   margin-bottom: 1rem;
-  display: inline-block;
+  display: block;
   transition: .3s ease-in;
   margin-top: 5rem;
   margin-bottom: 0;
