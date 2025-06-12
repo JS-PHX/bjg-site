@@ -868,10 +868,14 @@ textarea {
 
   body, html {
     background-image: linear-gradient(to top, #00000088 30%, #ffffff44 100%), url(pics/bjg-bg.jpg);
-    display: grid;
     grid-template-rows: 1fr auto;
     height: 100%;
     overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   
 
@@ -1603,7 +1607,7 @@ textarea:focus {
 }
 
 footer {
-  margin-top: 0px;
+  margin-top: auto;
   width: 100%;
   text-align: center;
   color: #F3F7FA;
@@ -1611,7 +1615,6 @@ footer {
   background-color: #012759;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
-  position: absolute;
 }
 
 }
