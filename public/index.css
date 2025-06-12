@@ -5,6 +5,7 @@
 }
 
 html, body {
+  background-color: #012759;
   background-image: linear-gradient(to top, #00000088 30%, #ffffff44 70%), url(pics/bjg-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,7 +210,7 @@ section h1 {
 }
 section p {
   margin: auto;
-  margin-top: 15rem;
+  margin-top: 14rem;
   margin-bottom: 15rem;
   font-size: 116px;
   width: 100%;
