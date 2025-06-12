@@ -1347,6 +1347,7 @@ textarea {
 form {
   background-color: rgb(119, 133, 172, .75);
   border: 2px solid #FFD802;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* background-image: url(pics/rock.jpg); */
   color: #F3F7FA;
   width: 90%;
@@ -1426,12 +1427,12 @@ textarea:focus {
   color: #012759;
   border: none;
   font-size: 16px;
-  transition: .3s ease-in-out;
+  transition: ease all .3s;
 }
 .emailButton:hover {
   background-color: #F3F7FA;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: ease all .3s;
+	transition: ease all .3s;
   outline: none;
 }
 
