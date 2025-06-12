@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #012759;
 }
 
 html, body {
@@ -13,6 +12,7 @@ html, body {
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 div {
@@ -865,6 +865,7 @@ textarea {
   html, body {
     margin: 0;
     padding: 0;
+    overscroll-behavior: none;
   }
 
   body, html {
