@@ -273,7 +273,7 @@ section .text-container1 {
   height: 100vh;
   background: linear-gradient(to bottom, #01275900, #01275999);
   margin-top: 4rem;
-  backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(1.25px);
 }
 section .text-container2 {
   display: inline-block;
@@ -281,7 +281,7 @@ section .text-container2 {
   width: 100%;
   background: linear-gradient(to bottom, #01275999, #012759bb);
   height: 100vh;
-  backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(1.25px);
 }
 section .text-container3 {
   display: inline-block;
@@ -289,7 +289,7 @@ section .text-container3 {
   width: 100%;
   background: linear-gradient(to bottom, #012759bb, #012759dd);
   height: 100vh;
-  backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(1.25px);
 }
 section .text-container4 {
   display: inline-block;
@@ -297,7 +297,7 @@ section .text-container4 {
   width: 100%;
   background: linear-gradient(to bottom, #012759dd, #012759ff);
   height: auto;
-  backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(1.25px);
 }
 /* section .text-container .text-box {
   margin-top: 15rem;
@@ -312,7 +312,7 @@ section .text-container4 {
 } */
 
 .firstBox {
-  margin-top: 15rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
@@ -330,7 +330,7 @@ section .text-container4 {
 }
 
 .secondBox {
-  margin-top: 15rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   padding: 3rem;
   width: 100vh;
@@ -349,7 +349,7 @@ section .text-container4 {
 }
 
 .thirdBox {
-  margin-top: 15rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   padding: 2rem;
   width: 60%;
