@@ -312,8 +312,8 @@ section .text-container4 {
 } */
 
 .firstBox {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   /* float: left; */
@@ -330,8 +330,8 @@ section .text-container4 {
 }
 
 .secondBox {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 3rem;
   width: 100vh;
   font-size: 24px;
@@ -349,8 +349,8 @@ section .text-container4 {
 }
 
 .thirdBox {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 2rem;
   width: 60%;
   font-size: 24px;
