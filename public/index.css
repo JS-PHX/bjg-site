@@ -321,7 +321,7 @@ section .text-container4 {
   font-size: 24px;
   z-index: 0;
   transition: ease all .5s;
-  /* background-color: rgba(1, 39, 89, 0.75); */
+  background-color: #720000;
   /* border-radius: 5px; */
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 2.5rem;
@@ -336,7 +336,7 @@ section .text-container4 {
   font-size: 24px;
   z-index: 0;
   transition: ease all 1s;
-  /* background-color: rgba(1, 39, 89, 0.75); */
+  background-color: #720000;
   /* border-radius: 5px; */
   display: block;
   margin-left: auto;
@@ -355,7 +355,7 @@ section .text-container4 {
   font-size: 24px;
   z-index: 0;
   transition: ease all 1s;
-  /* background-color: rgba(1, 39, 89, 0.75); */
+  background-color: #720000;
   /* border-radius: 5px; */
   float: right;
   margin-right: 5rem;
