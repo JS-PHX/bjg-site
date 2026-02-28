@@ -324,7 +324,7 @@ section .text-container4 {
   /* background-color: rgba(1, 39, 89, 0.75); */
   /* border-radius: 5px; */
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 5rem;
+  line-height: 2.5rem;
   text-align: left;
 }
 
@@ -342,7 +342,7 @@ section .text-container4 {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 5rem;
+  line-height: 2.5rem;
   text-align: left;
   overflow: hidden;
 }
@@ -360,7 +360,7 @@ section .text-container4 {
   float: right;
   margin-right: 5rem;
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 5rem;
+  line-height: 2.5rem;
   text-align: left;
 
 }
