@@ -267,50 +267,38 @@ section p {
 }
 
 section .text-container1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   margin: auto;
-  margin-top: 4rem;
   width: 100%;
   height: 100vh;
   background: linear-gradient(to bottom, #01275900, #01275999);
+  margin-top: 4rem;
   backdrop-filter: blur(5px);
 }
-
 section .text-container2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   margin: auto;
   width: 100%;
-  height: 100vh;
   background: linear-gradient(to bottom, #01275999, #012759bb);
-  backdrop-filter: blur(5px);
-}
-
-section .text-container3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 100%;
   height: 100vh;
-  background: linear-gradient(to bottom, #012759bb, #012759dd);
   backdrop-filter: blur(5px);
 }
-
-section .text-container4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+section .text-container3 {
+  display: inline-block;
   margin: auto;
   width: 100%;
-  height: auto;
-  background: linear-gradient(to bottom, #012759dd, #012759ff);
+  background: linear-gradient(to bottom, #012759bb, #012759dd);
+  height: 100vh;
   backdrop-filter: blur(5px);
 }
-
+section .text-container4 {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  background: linear-gradient(to bottom, #012759dd, #012759ff);
+  height: auto;
+  backdrop-filter: blur(5px);
+}
 /* section .text-container .text-box {
   margin-top: 15rem;
   margin-bottom: 5rem;
@@ -324,63 +312,74 @@ section .text-container4 {
 } */
 
 .firstBox {
-  margin-top: 5rem;
+  margin-top: 15rem;
   margin-bottom: 5rem;
   margin-left: 5rem;
+  /* float: left; */
   padding: 3rem;
-  width: 50%;
-  max-width: 600px;
+  width: 100vh;
   font-size: 24px;
+  z-index: 0;
   transition: ease all .5s;
+  /* background-color: rgba(1, 39, 89, 0.75); */
+  /* border-radius: 5px; */
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 1.7;
+  line-height: 5rem;
   text-align: left;
 }
 
 .secondBox {
-  margin-top: 5rem;
+  margin-top: 15rem;
   margin-bottom: 5rem;
   padding: 3rem;
-  width: 50%;
-  max-width: 600px;
+  width: 100vh;
   font-size: 24px;
+  z-index: 0;
   transition: ease all 1s;
+  /* background-color: rgba(1, 39, 89, 0.75); */
+  /* border-radius: 5px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 1.7;
+  line-height: 5rem;
   text-align: left;
+  overflow: hidden;
 }
 
 .thirdBox {
-  margin-top: 5rem;
+  margin-top: 15rem;
   margin-bottom: 5rem;
   padding: 2rem;
-  width: 50%;
-  max-width: 600px;
+  width: 60%;
   font-size: 24px;
+  z-index: 0;
   transition: ease all 1s;
+  /* background-color: rgba(1, 39, 89, 0.75); */
+  /* border-radius: 5px; */
   float: right;
   margin-right: 5rem;
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 1.7;
+  line-height: 5rem;
   text-align: left;
+
 }
 
 .contactBox {
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 5rem;
   padding: 2rem;
   width: 33%;
-  max-width: 400px;
   font-size: 40px;
+  z-index: 0;
   transition: ease all 1s;
+  /* background-color: rgba(1, 39, 89, 0.75); */
+  /* border-radius: 5px; */
   float: right;
   margin-right: 5rem;
-  margin-left: 5rem;
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 1.7;
+  margin-left: 5rem;
+  line-height: 5rem;
   text-align: center;
 }
 
@@ -389,20 +388,32 @@ section .text-container4 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.contactNum p {
+.contactNum p{
   font-size: 32px;
   color: #F3F7FA;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
   text-shadow: none;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+
+
+/* section .text-container .text-box:hover {
+  box-shadow: inset 0 0 0 5px #FFD802;
+  transition: ease all .7s;
+  -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+} */
+
 .firstBox:hover, .secondBox:hover, .thirdBox:hover, .contactBox:hover {
+  /* box-shadow: inset 0 0 0 2.5px #FFD802; */
   transition: ease all .75s;
   -webkit-transform: scale(1.025);
-  transform: scale(1.025);
+	transform: scale(1.025);
+  /* background-color: rgb(1, 40, 91, .25); */
 }
 
 section .text-container .text-box h3 {
@@ -410,11 +421,18 @@ section .text-container .text-box h3 {
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 10px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
   align-items: center;
   font-family: 'Oswald', sans-serif;
+  z-index: 0;
   line-height: 2;
 }
+
 
 /* 
 @media (max-width: 900px) {
