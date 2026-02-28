@@ -273,7 +273,7 @@ section .text-container1 {
   height: 100vh;
   background: linear-gradient(to bottom, #01275900, #01275999);
   margin-top: 4rem;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2.5px);
 }
 section .text-container2 {
   display: inline-block;
@@ -281,7 +281,7 @@ section .text-container2 {
   width: 100%;
   background: linear-gradient(to bottom, #01275999, #012759bb);
   height: 100vh;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2.5px);
 }
 section .text-container3 {
   display: inline-block;
@@ -289,7 +289,7 @@ section .text-container3 {
   width: 100%;
   background: linear-gradient(to bottom, #012759bb, #012759dd);
   height: 100vh;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2.5px);
 }
 section .text-container4 {
   display: inline-block;
@@ -297,7 +297,7 @@ section .text-container4 {
   width: 100%;
   background: linear-gradient(to bottom, #012759dd, #012759ff);
   height: auto;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2.5px);
 }
 /* section .text-container .text-box {
   margin-top: 15rem;
@@ -359,7 +359,8 @@ section .text-container4 {
   background-color: #720000;
   /* border-radius: 5px; */
   float: right;
-  margin-right: 5rem;
+  margin-right: auto;
+  margin-left: auto;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 2.5rem;
   text-align: left;
