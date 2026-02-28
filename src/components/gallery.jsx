@@ -20,9 +20,10 @@ const Gallery = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      handleNextClick();
-    }, 2000); // Change the interval duration (in milliseconds) as needed
+      setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    }, 2000);
     return () => clearInterval(intervalId);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex]);
 
   return (
