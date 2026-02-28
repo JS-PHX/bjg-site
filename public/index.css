@@ -312,8 +312,8 @@ section .text-container4 {
 } */
 
 .firstBox {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 10rem;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   /* float: left; */
@@ -322,7 +322,7 @@ section .text-container4 {
   font-size: 24px;
   z-index: 0;
   transition: ease all .5s;
-  background-color: #720000;
+  background-color: #00721b;
   /* border-radius: 5px; */
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 2.5rem;
@@ -330,14 +330,14 @@ section .text-container4 {
 }
 
 .secondBox {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 10rem;
+  margin-bottom: 0;
   padding: 3rem;
   width: 100vh;
   font-size: 24px;
   z-index: 0;
   transition: ease all 1s;
-  background-color: #720000;
+  background-color: #00721b;
   /* border-radius: 5px; */
   display: block;
   margin-left: auto;
@@ -349,14 +349,14 @@ section .text-container4 {
 }
 
 .thirdBox {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 10rem;
+  margin-bottom: 0;
   padding: 2rem;
   width: 60%;
   font-size: 24px;
   z-index: 0;
   transition: ease all 1s;
-  background-color: #720000;
+  background-color: #00721b;
   /* border-radius: 5px; */
   float: right;
   margin-right: auto;
