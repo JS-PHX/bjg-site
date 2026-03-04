@@ -454,6 +454,8 @@ section .text-container .text-box h3 {
   }
 } */
 
+/* reveal goes in the home text-containers */
+
 .reveal {
   opacity: .75;
   transition: opacity .75s;
