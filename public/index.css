@@ -458,7 +458,7 @@ section .text-container .text-box h3 {
 
 .reveal {
   opacity: .75;
-  transition: opacity .75s;
+  transition: opacity .25s;
 }
 
 .reveal.active {
