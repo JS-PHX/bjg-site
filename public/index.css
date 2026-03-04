@@ -274,6 +274,7 @@ section .text-container1 {
   background: linear-gradient(to bottom, #01275900, #01275999);
   margin-top: 4rem;
   backdrop-filter: blur(1.25px);
+  text-align: center; 
 }
 section .text-container2 {
   display: inline-block;
@@ -282,6 +283,7 @@ section .text-container2 {
   background: linear-gradient(to bottom, #01275999, #012759bb);
   height: 100vh;
   backdrop-filter: blur(1.25px);
+  text-align: center; 
 }
 section .text-container3 {
   display: inline-block;
@@ -290,6 +292,7 @@ section .text-container3 {
   background: linear-gradient(to bottom, #012759bb, #012759dd);
   height: 100vh;
   backdrop-filter: blur(1.25px);
+  text-align: center; 
 }
 section .text-container4 {
   display: inline-block;
@@ -317,7 +320,7 @@ section .text-container4 {
   margin-left: auto;
   margin-right: auto;
   /* float: left; */
-  padding: 1rem;
+  padding: 2rem;
   width: 100vh;
   font-size: 24px;
   z-index: 0;
@@ -326,48 +329,48 @@ section .text-container4 {
   /* border-radius: 5px; */
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 2.5rem;
+  display: inline-block;
   text-align: left;
-  display: block;
-
+  float: none;
 }
 
 .secondBox {
   margin-top: 10rem;
   margin-bottom: 0;
-  padding: 1rem;
+  padding: 3rem;
   width: 100vh;
   font-size: 24px;
   z-index: 0;
   transition: ease all 1s;
   background-color: #00721b;
   /* border-radius: 5px; */
-  display: block;
+  display: inline-block;
+  text-align: left;
+  float: none;  
   margin-left: auto;
   margin-right: auto;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 2.5rem;
-  text-align: left;
   overflow: hidden;
 }
 
 .thirdBox {
   margin-top: 10rem;
   margin-bottom: 0;
-  padding: 1rem;
+  padding: 2rem;
   width: 60%;
   font-size: 24px;
   z-index: 0;
   transition: ease all 1s;
   background-color: #00721b;
   /* border-radius: 5px; */
-  float: right;
   margin-right: auto;
   margin-left: auto;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 2.5rem;
+  display: inline-block;
   text-align: left;
-  display: block;
-
+  float: none;
 
 }
 
