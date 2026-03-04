@@ -38,7 +38,7 @@ export default function Home(){
       Whether it’s bulk hauling, construction material transport, or custom trucking needs, we are equipped to support projects of any scale.</h3>
     </div>
   </div>
-  <div class="text-container4 reveal">
+  <div class="text-container4">
     <div class="contactBox">
       <h3>Contact</h3>
         <span className="contactNum">

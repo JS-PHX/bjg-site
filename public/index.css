@@ -328,7 +328,7 @@ section .text-container4 {
   /* background-color: #00721b; */
   /* border-radius: 5px; */
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 2.5rem;
+  line-height: 5rem;
   display: inline-block;
   text-align: left;
   float: none;
@@ -350,7 +350,7 @@ section .text-container4 {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 2.5rem;
+  line-height: 5rem;
   overflow: hidden;
 }
 
@@ -367,7 +367,7 @@ section .text-container4 {
   margin-right: auto;
   margin-left: auto;
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 2.5rem;
+  line-height: 5rem;
   display: inline-block;
   text-align: left;
   float: none;
@@ -388,7 +388,7 @@ section .text-container4 {
   margin-right: 5rem;
   font-family: 'Roboto Condensed', sans-serif;
   margin-left: 5rem;
-  line-height: 5rem;
+  line-height: 2.5rem;
   text-align: center;
 }
 
