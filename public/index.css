@@ -270,7 +270,7 @@ section .text-container1 {
   display: inline-block;
   margin: auto;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: linear-gradient(to bottom, #01275900, #01275999);
   margin-top: 4rem;
   backdrop-filter: blur(1.25px);
@@ -281,7 +281,7 @@ section .text-container2 {
   margin: auto;
   width: 100%;
   background: linear-gradient(to bottom, #01275999, #012759bb);
-  height: 100vh;
+  height: auto;
   backdrop-filter: blur(1.25px);
   text-align: center; 
 }
@@ -290,7 +290,7 @@ section .text-container3 {
   margin: auto;
   width: 100%;
   background: linear-gradient(to bottom, #012759bb, #012759dd);
-  height: 100vh;
+  height: auto;
   backdrop-filter: blur(1.25px);
   text-align: center; 
 }
