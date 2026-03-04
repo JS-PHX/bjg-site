@@ -20,7 +20,7 @@ export default function Home(){
       <span class="underline-hover">Welcome to BJG Trucking</span>
     </p>
   </div>
-  <div class="text-container1 reveal fade-bottom">
+  <div class="text-container1 fade-bottom">
     <div class="firstBox">
       <h3>BJG Trucking Inc. is a family-owned and operated trucking company founded in 2003 as a sister company to BJG Grading Inc. 
       With a strong foundation in the construction and hauling industry, we proudly serve the Greater Phoenix area and surrounding regions.</h3>
