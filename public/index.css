@@ -248,7 +248,7 @@ section p {
   content: "";
   display: block;
   width: 0;
-  height: 3px;
+  height: 5px;
   background-color: #FFD802;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
