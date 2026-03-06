@@ -731,8 +731,8 @@ textarea:focus {
 }
 
 .imageWrapper {
-  width: 75%;
-  max-width: 1200px;
+  width: 55%;
+  max-width: 900px;
   aspect-ratio: 4/3;
   margin: 0 auto;
   position: relative;
