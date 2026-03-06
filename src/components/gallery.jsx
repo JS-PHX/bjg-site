@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Gallery = () => {
   const images = [
@@ -45,10 +46,10 @@ const Gallery = () => {
   ))}
 </div>
       <button onClick={handlePrevClick} className="actionsLeft">
-        ←
+        <ChevronLeft size={36} strokeWidth={1.5} />
       </button>
       <button onClick={handleNextClick} className="actionsRight">
-        →
+        <ChevronRight size={36} strokeWidth={1.5} />
       </button>
       <div className="gallery-dots">
         {images.map((_, index) => (
