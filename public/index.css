@@ -381,7 +381,7 @@ section .text-container4 {
   max-width: 400px;
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
-  border-top: 1px solid rgb(145, 255, 0);
+  border-top: 1px solid #FFD802;
   transition: ease all 1s;
 }
 
