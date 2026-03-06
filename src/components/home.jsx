@@ -12,15 +12,14 @@ const revealVariants = {
 
 const RevealBox = ({ children, className }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "0px 0px -100px 0px" });
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
 
   return (
     <motion.div
       ref={ref}
       className={className}
-      initial={{ opacity: 0, filter: "blur(10px)" }}
-      animate={isInView ? { opacity: 1, filter: "blur(0px)" } : {}}
-      transition={{ duration: 1, ease: "easeOut" }}
+      animate={isInView ? "visible" : "hidden"}
+      variants={revealVariants}
     >
       {children}
     </motion.div>
