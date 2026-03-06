@@ -535,15 +535,13 @@ footer {
 
 .reveal-blur {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateY(20px);
-  transition: opacity .25s ease, filter .25s ease, transform .25s ease;
+  filter: blur(10px);
+  transition: opacity 1s ease, filter 1s ease;
 }
 
-.reveal-blur.active {
+.reveal-blur.visible {
   opacity: 1;
   filter: blur(0px);
-  transform: translateY(0);
 }
 
 
