@@ -35,8 +35,15 @@ const Gallery = () => {
     >
       <h1 className="slideTitle">Gallery</h1>
       <div className="imageWrapper">
-        <img src={images[currentIndex].src} alt="" className="slideshowStyle" />
-      </div>
+  {images.map((image, index) => (
+    <img
+      key={index}
+      src={image.src}
+      alt=""
+      className={`slideshowStyle ${index === currentIndex ? 'active' : ''}`}
+    />
+  ))}
+</div>
       <button onClick={handlePrevClick} className="actionsLeft">
         ←
       </button>
