@@ -725,7 +725,6 @@ textarea:focus {
 }
 
 .actionsLeft, .actionsRight {
-  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 2.5rem;
