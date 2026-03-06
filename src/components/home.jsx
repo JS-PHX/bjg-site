@@ -1,15 +1,13 @@
 import { motion } from "framer-motion";
 
 const revealVariants = {
-  hidden: { opacity: 0, filter: "blur(10px)", y: 20 },
+  hidden: { opacity: 0, filter: "blur(10px)" },
   visible: { 
     opacity: 1, 
     filter: "blur(0px)", 
-    y: 0, 
-    transition: { duration: 1, ease: "easeOut" } 
+    transition: { duration: 1.2, ease: "easeOut" } 
   },
 };
-
 export default function Home() {
   return (
     <motion.div
