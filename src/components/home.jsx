@@ -42,9 +42,7 @@ export default function Home() {
           <div className="text-container1">
             <RevealBox className="firstBox">
               <h3>
-                BJG Trucking Inc. is a family-owned and operated trucking company founded in 2003 as a
-                sister company to BJG Grading Inc. With a strong foundation in the construction and hauling
-                industry, we proudly serve the Greater Phoenix area and surrounding regions.
+              BJG Trucking Inc. is a family-owned and operated company proudly serving the Greater Phoenix area since 2003. Founded as a sister company to BJG Grading Inc., we bring over 20 years of hands-on experience in the construction and hauling industry.
               </h3>
             </RevealBox>
           </div>
@@ -52,9 +50,7 @@ export default function Home() {
           <div className="text-container2">
             <RevealBox className="secondBox">
               <h3>
-                With over 15 years of professional experience, BJG Trucking Inc. is committed to providing
-                dependable, high-quality trucking services. We prioritize both service excellence and competitive
-                pricing to meet the demands of today's commercial and industrial job sites.
+              We are committed to providing dependable, high-quality trucking services with both service excellence and competitive pricing as our top priorities. Whether it's a small residential job or a large-scale commercial project, we have the experience and resources to get it done right.
               </h3>
             </RevealBox>
           </div>
@@ -62,10 +58,7 @@ export default function Home() {
           <div className="text-container3">
             <RevealBox className="thirdBox">
               <h3>
-                Our well-maintained fleet of dump trucks and strong network of plant accounts throughout the
-                Valley enable us to deliver materials efficiently and on time. Whether it's bulk hauling,
-                construction material transport, or custom trucking needs, we are equipped to support projects
-                of any scale.
+              Our well-maintained fleet of dump trucks and extensive network of plant accounts throughout the Valley allow us to deliver materials efficiently and on time. From bulk hauling and construction material transport to custom trucking needs, we are equipped to support projects of any size and scale.
               </h3>
             </RevealBox>
           </div>
