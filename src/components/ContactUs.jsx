@@ -7,34 +7,40 @@ export const ContactUs = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm(
       'service_mscgxyq',
       'template_i24q4zp',
       form.current,
       'WHpfLyqJPl10QF4qF'
-        )
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      form.current.reset();
+    ).then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+    form.current.reset();
   };
 
   return (
-    <motion.div class='message'
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            exit={{opacity: 0, transition: {duration: .01}}}
+    <motion.div
+      className='message'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.01 } }}
     >
-    <form ref={form} onSubmit={sendEmail}>
-      <p class='contactTitle'>Contact Us</p>
-      <input placeholder="Name" type="text" name="user_name" />
-      <input placeholder="E-Mail" type="email" name="user_email" /><br /><br />
-      <textarea placeholder="Message" name="message" />
-      <input class="emailButton" type="submit" value="SEND" />
-    </form>
+      <form ref={form} onSubmit={sendEmail}>
+        <p className='contactTitle'>Contact Us</p>
+
+        <label className='formLabel'>Name</label>
+        <input placeholder="Your name" type="text" name="user_name" required />
+
+        <label className='formLabel'>Email</label>
+        <input placeholder="your@email.com" type="email" name="user_email" required />
+
+        <label className='formLabel'>Message</label>
+        <textarea placeholder="How can we help you?" name="message" required />
+
+        <input className="emailButton" type="submit" value="SEND" />
+      </form>
     </motion.div>
   );
 };
