@@ -1,25 +1,17 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const revealVariants = {
-  hidden: { opacity: 0, filter: "blur(10px)" },
-  visible: {
-    opacity: 1,
-    filter: "blur(0px)",
-    transition: { duration: 1, ease: "easeOut" },
-  },
-};
-
 const RevealBox = ({ children, className }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.5 });
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -100px 0px" });
 
   return (
     <motion.div
       ref={ref}
       className={className}
-      animate={isInView ? "visible" : "hidden"}
-      variants={revealVariants}
+      initial={{ opacity: 0, filter: "blur(10px)" }}
+      animate={isInView ? { opacity: 1, filter: "blur(0px)" } : {}}
+      transition={{ duration: 1, ease: "easeOut" }}
     >
       {children}
     </motion.div>
