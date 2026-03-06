@@ -64,15 +64,14 @@ export default function Home() {
           </div>
 
           <div className="text-container4">
-            <RevealBox className="contactBox">
-              <h4 className="contactTitle">Get In Touch</h4>
-              <h3 className="contactHeading">Contact Us</h3>
-              <div className="contactNum">
-                <p><span className="contactLabel">Phone</span>(602) 200-7028</p>
-                <p><span className="contactLabel">Fax</span>(602) 200-7029</p>
-              </div>
-            </RevealBox>
-          </div>
+              <RevealBox className="contactBox">
+                <h3 className="contactHeading">Contact</h3>
+                <div className="contactNum">
+                  <p><span className="contactLabel">Phone</span>(602) 200-7028</p>
+                  <p><span className="contactLabel">Fax</span>(602) 200-7029</p>
+                </div>
+              </RevealBox>
+            </div>
         </section>
       </body>
     </motion.div>
