@@ -742,8 +742,8 @@ textarea:focus {
   transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
-.actionsLeft { left: 0.75rem; }
-.actionsRight { right: 0.75rem; }
+.actionsLeft { left: 20%; }
+.actionsRight { right: 20%; }
 
 .actionsLeft:hover, .actionsRight:hover { opacity: 1; }
 
