@@ -1,20 +1,28 @@
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const RevealBox = ({ children, className }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "0px 0px -100px 0px" });
+
+  useEffect(() => {
+    const el = ref.current;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add("visible");
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (el) observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <motion.div
-      ref={ref}
-      className={className}
-      initial={{ opacity: 0, filter: "blur(10px)" }}
-      animate={isInView ? { opacity: 1, filter: "blur(0px)" } : {}}
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
+    <div ref={ref} className={`${className} reveal-blur`}>
       {children}
-    </motion.div>
+    </div>
   );
 };
 
