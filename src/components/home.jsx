@@ -65,11 +65,12 @@ export default function Home() {
 
           <div className="text-container4">
             <RevealBox className="contactBox">
-              <h3>Contact</h3>
-              <span className="contactNum">
-                <p>Phone: (602) 200-7028</p>
-                <p>Fax: (602) 200-7029</p>
-              </span>
+              <h4 className="contactTitle">Get In Touch</h4>
+              <h3 className="contactHeading">Contact Us</h3>
+              <div className="contactNum">
+                <p><span className="contactLabel">Phone</span>(602) 200-7028</p>
+                <p><span className="contactLabel">Fax</span>(602) 200-7029</p>
+              </div>
             </RevealBox>
           </div>
         </section>

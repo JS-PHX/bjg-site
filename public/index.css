@@ -375,38 +375,56 @@ section .text-container4 {
 }
 
 .contactBox {
-  margin-top: 10rem;
-  margin-bottom: 5rem;
-  padding: 2rem;
-  width: 33%;
-  font-size: 40px;
-  z-index: 0;
-  transition: ease all 1s;
-  /* background-color: rgba(1, 39, 89, 0.75); */
-  /* border-radius: 5px; */
-  float: right;
-  margin-right: 5rem;
+  margin: 5rem auto;
+  padding: 3rem;
+  width: 100%;
+  max-width: 400px;
   font-family: 'Roboto Condensed', sans-serif;
-  margin-left: 5rem;
-  line-height: 3rem;
   text-align: center;
+  border-top: 1px solid rgba(243, 247, 250, 0.3);
+  transition: ease all 1s;
+}
+
+.contactTitle {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: rgba(243, 247, 250, 0.5);
+  margin-bottom: 0.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.contactHeading {
+  font-size: 2rem;
+  color: #F3F7FA;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 .contactNum {
-  text-align: left;
   font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
 }
 
 .contactNum p {
-  font-size: 32px;
+  font-size: 1.1rem;
   color: #F3F7FA;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin: 0.5rem 0;
   text-shadow: none;
-  text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1.7;
 }
 
+.contactLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(243, 247, 250, 0.5);
+}
 
 
 
