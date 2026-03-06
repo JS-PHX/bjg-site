@@ -724,46 +724,31 @@ textarea:focus {
   align-items: center;
 }
 
-.actionsLeft {
+.actionsLeft, .actionsRight {
   position: absolute;
   top: 50%;
-  left: 5%;
   transform: translateY(-50%);
-  font-size: 4rem;
-  width: 5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #FFD802;
   background-color: transparent;
-  z-index: 1;
-  cursor: pointer;
-  opacity: 75%;
-  transition: opacity 0.3s ease, background-color 0.3s ease;
   border: none;
-  border-radius: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
-.actionsRight {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  transform: translateY(-50%);
-  font-size: 4rem;
-  width: 5rem;
-  color: #FFD802;
-  background-color: transparent;
-  z-index: 1;
-  cursor: pointer;
-  opacity: 75%;
-  transition: opacity 0.3s ease, background-color 0.3s ease;
-  border: none;
-  border-radius: 100%;
-}
+.actionsLeft { left: 0.75rem; }
+.actionsRight { right: 0.75rem; }
 
-.actionsLeft:hover, .actionsRight:hover {
-  opacity: 100%;
-}
+.actionsLeft:hover, .actionsRight:hover { opacity: 1; }
 
 .actionsLeft:active, .actionsRight:active {
-  background-color: #012759;
+  background-color: transparent;
 }
 
 .gallery-dots {

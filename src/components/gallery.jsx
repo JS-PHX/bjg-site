@@ -44,13 +44,13 @@ const Gallery = () => {
       className={`slideshowStyle ${index === currentIndex ? 'active' : ''}`}
     />
   ))}
-</div>
       <button onClick={handlePrevClick} className="actionsLeft">
         <ChevronLeft size={36} strokeWidth={1.5} />
       </button>
       <button onClick={handleNextClick} className="actionsRight">
         <ChevronRight size={36} strokeWidth={1.5} />
       </button>
+</div>
       <div className="gallery-dots">
         {images.map((_, index) => (
           <span
