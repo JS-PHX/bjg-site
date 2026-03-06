@@ -702,6 +702,7 @@ textarea:focus {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  background-color: orange;
 }
 
 .imageWrapper img {
@@ -724,6 +725,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #720000;
 }
 
 .actionsLeft {
