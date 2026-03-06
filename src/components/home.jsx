@@ -5,7 +5,7 @@ const revealVariants = {
   visible: { 
     opacity: 1, 
     filter: "blur(0px)", 
-    transition: { duration: 1.2, ease: "easeOut" } 
+    transition: { duration: .5, ease: "easeOut" } 
   },
 };
 export default function Home() {
