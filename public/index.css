@@ -779,13 +779,15 @@ textarea:focus {
   height: clamp(8px, 1vw, 14px);
   margin: 0 10px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: transparent;
+  border: 1.5px solid #ccc;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .gallery-dot.active {
   background-color: #FFD802;
+  border-color: #FFD802;
 }
 
 
