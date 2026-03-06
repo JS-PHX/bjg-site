@@ -35,22 +35,24 @@ const Gallery = () => {
       className="gallery-container"
     >
       <h1 className="slideTitle">Gallery</h1>
-      <div className="imageWrapper">
-  {images.map((image, index) => (
-    <img
-      key={index}
-      src={image.src}
-      alt=""
-      className={`slideshowStyle ${index === currentIndex ? 'active' : ''}`}
-    />
-  ))}
-      <button onClick={handlePrevClick} className="actionsLeft">
-        <ChevronLeft size={36} strokeWidth={1.5} />
-      </button>
-      <button onClick={handleNextClick} className="actionsRight">
-        <ChevronRight size={36} strokeWidth={1.5} />
-      </button>
-</div>
+      <div className="galleryRow">
+          <button onClick={handlePrevClick} className="actionsLeft">
+            <ChevronLeft size={36} strokeWidth={1.5} />
+          </button>
+          <div className="imageWrapper">
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={image.src}
+                alt=""
+                className={index === currentIndex ? 'active' : ''}
+              />
+            ))}
+          </div>
+          <button onClick={handleNextClick} className="actionsRight">
+            <ChevronRight size={36} strokeWidth={1.5} />
+          </button>
+        </div>
       <div className="gallery-dots">
         {images.map((_, index) => (
           <span
