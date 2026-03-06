@@ -435,7 +435,7 @@ section .text-container4 {
 	transform: scale(1.05);
 } */
 
-.firstBox:hover, .secondBox:hover, .thirdBox:hover, .contactBox:hover {
+.firstBox:hover, .secondBox:hover, .thirdBox:hover {
   /* box-shadow: inset 0 0 0 2.5px #FFD802; */
   transition: ease all 1.25s;
   -webkit-transform: scale(1.025);
