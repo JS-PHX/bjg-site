@@ -11,10 +11,8 @@ const revealVariants = {
 export default function Home() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.01 } }}
-    >
+  exit={{ opacity: 0, transition: { duration: 0.01 } }}
+  >
       <body>
         <section className="container">
           <div className="text-container">
