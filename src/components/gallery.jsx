@@ -37,7 +37,7 @@ const Gallery = () => {
       <h1 className="slideTitle">Gallery</h1>
       <div className="galleryRow">
           <button onClick={handlePrevClick} className="actionsLeft">
-            <ChevronLeft size={36} strokeWidth={1.5} />
+            <ChevronLeft size={72} strokeWidth={2} />
           </button>
           <div className="imageWrapper">
             {images.map((image, index) => (
@@ -50,7 +50,7 @@ const Gallery = () => {
             ))}
           </div>
           <button onClick={handleNextClick} className="actionsRight">
-            <ChevronRight size={36} strokeWidth={1.5} />
+            <ChevronRight size={72} strokeWidth={2} />
           </button>
         </div>
       <div className="gallery-dots">
