@@ -27,7 +27,7 @@ export default function Home() {
               variants={revealVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.6 }}
             >
               <h3>
                 BJG Trucking Inc. is a family-owned and operated trucking company founded in 2003 as a 
@@ -43,7 +43,7 @@ export default function Home() {
               variants={revealVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.6 }}
             >
               <h3>
                 With over 15 years of professional experience, BJG Trucking Inc. is committed to providing 
@@ -59,7 +59,7 @@ export default function Home() {
               variants={revealVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.6 }}
             >
               <h3>
                 Our well-maintained fleet of dump trucks and strong network of plant accounts throughout the 
@@ -76,7 +76,7 @@ export default function Home() {
               variants={revealVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.6 }}
             >
               <h3>Contact</h3>
               <span className="contactNum">
