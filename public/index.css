@@ -587,7 +587,7 @@ footer {
 
 form {
   background-color: rgb(1, 40, 91, 0.5);
-  border: 2px solid #FFD802;
+  /* border: 2px solid #FFD802; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   color: #F3F7FA;
