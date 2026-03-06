@@ -688,11 +688,9 @@ textarea:focus {
   text-decoration: underline #FFD802;
   text-underline-offset: 8px;
   text-align: center;
-  margin-top: 1rem;
-  padding: 15px;
+  padding: 16px;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
-  background-color: #00721b;
 }
 
 .imageWrapper {
@@ -702,7 +700,6 @@ textarea:focus {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background-color: orange;
 }
 
 .imageWrapper img {
@@ -725,7 +722,6 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #720000;
 }
 
 .actionsLeft {
