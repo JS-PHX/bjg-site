@@ -118,8 +118,8 @@ header {
 }
 .navLinks:active {
   transform: scale(1.05);
-  color: rgb(119, 133, 172);
-  transition: all .001s;
+  color: rgba(119, 133, 172, 0);
+  transition: all .01s;
 }
 
 .nav-links.show-nav {
