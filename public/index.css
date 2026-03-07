@@ -684,9 +684,8 @@ textarea:focus {
 .slideTitle {
   color: #F3F7FA;
   font-size: 48px;
-  text-shadow: 2px 1px 0 black;
+  text-shadow: 1px 1px 0 black;
   text-decoration: underline #FFD802;
-  text-underline-offset: 8px;
   text-align: center;
   margin-top: 7.5rem;
   padding: 15px;
