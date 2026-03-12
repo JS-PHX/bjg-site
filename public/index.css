@@ -845,7 +845,7 @@ textarea:focus {
   }
 
   .navbar {
-    height: 80px;
+    height: 70px;
     justify-content: center;
     padding: 0 1rem;
   }
@@ -856,13 +856,12 @@ textarea:focus {
 
   .logoLink {
     margin: 0;
-    height: 60px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  /* ── Hamburger ── */
 /* ── Hamburger Button ── */
 .hamburger-btn {
   display: flex;
@@ -903,7 +902,7 @@ textarea:focus {
 .hamburger-icon::before { top: -8px; }
 .hamburger-icon::after { top: 8px; }
 
-/* Open state — animates to X */
+/* animates to X */
 .hamburger-btn.open .hamburger-icon {
   background-color: transparent;
 }
@@ -980,13 +979,14 @@ textarea:focus {
   width: 100%;
 }
   /* ── Hero Title ── */
-  section p {
+section p {
     font-size: 2rem;
     margin-top: 6rem;
     margin-bottom: 1.5rem;
     padding: 0 1rem;
     line-height: 1.2;
     text-shadow: 2px 1px 0px rgb(0, 0, 0, 1);
+    text-decoration: underline #FFD802;
   }
 
   /* ── Sections ── */
