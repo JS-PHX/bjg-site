@@ -1089,6 +1089,7 @@ textarea:focus {
       margin-top: 0;
       margin-bottom: 2rem;
       padding-bottom: 1rem;
+      border-bottom: 2px solid #FFD802;
     }
   
     .message {
@@ -1166,7 +1167,6 @@ textarea:focus {
       margin-top: 1rem;
       background-color: #FFD802;
       color: #012759;
-      font-weight: 700;
       border: none;
       font-size: 1rem;
       font-family: 'Oswald', sans-serif;
@@ -1176,6 +1176,8 @@ textarea:focus {
       cursor: pointer;
       transition: all 0.2s ease-in-out;
       border-radius: 2px;
+      justify-content: center;
+      text-align: center;
     }
   
     .emailButton:hover {
@@ -1191,11 +1193,8 @@ textarea:focus {
   
     footer {
       position: static;
-      clear: both;
-      width: 100%;
-      margin-top: 0;
+      padding: 0.5rem;
     }
-
 
   }/* ^^^ contact form ^^^ */
 
