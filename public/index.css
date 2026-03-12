@@ -1206,7 +1206,12 @@ textarea:focus {
 
 
 /* slideshow styles */
-.gallery-container {
+
+.nav-links.show-nav a[href="/gallery"] {
+  display: none;
+}
+
+/* .gallery-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1286,7 +1291,7 @@ textarea:focus {
 }
 .gallery-dot.active {
   background-color: #FFD802;
-}
+} */
 
 footer {
   position: static;
