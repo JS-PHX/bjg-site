@@ -1070,12 +1070,6 @@ textarea:focus {
     animation: fade-bottom 0.5s ease-in;
   }
 
-  /* ── Footer ── */
-  footer {
-    position: static;
-    padding: 0.5rem;
-  }
-
   /* contact form  */
 
     .contactTitle {
@@ -1189,19 +1183,7 @@ textarea:focus {
       color: #012759;
     }
 
-    .footer {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-    }
   
-    footer {
-      position: static;
-      width: 100%;
-      margin: 0;
-      padding: 0.5rem;
-      clear: both;
-    }
   
   /* ^^^ contact form ^^^ */
 
@@ -1363,14 +1345,16 @@ textarea:focus {
 }
 
 footer {
-  margin-top: auto;
+  position: static;
+  margin: 0;
   width: 100%;
   text-align: center;
+  padding: 0.5rem;
   color: #F3F7FA;
   font-size: 10px;
   background-color: #012759;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
+  clear: both;
 }
-
 }
