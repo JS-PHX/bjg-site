@@ -1367,4 +1367,14 @@ footer {
   height: auto;
 }
 
+div.footer {
+  background-image: none;
+  background-size: unset;
+  background-color: #012759;
+  min-height: unset;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
 }
