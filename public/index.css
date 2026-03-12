@@ -981,9 +981,9 @@ textarea:focus {
 }
   /* ── Hero Title ── */
   section p {
-    font-size: 3rem;
-    margin-top: 10rem;
-    margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
     padding: 0 1rem;
     line-height: 1.2;
     text-shadow: 2px 1px 0px rgb(0, 0, 0, 1);
@@ -997,17 +997,17 @@ textarea:focus {
   }
 
   /* ── Text Containers ── */
-  section .text-container1,
-  section .text-container2,
-  section .text-container3,
-  section .text-container4 {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 2rem 1rem;
-    backdrop-filter: blur(1.25px);
-  }
+section .text-container1,
+section .text-container2,
+section .text-container3,
+section .text-container4 {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 1.5rem 1rem;
+  backdrop-filter: blur(1.25px);
+}
 
   section .text-container1 { background: linear-gradient(to bottom, #01275900, #01275999); }
   section .text-container2 { background: linear-gradient(to bottom, #01275999, #012759bb); }
@@ -1019,10 +1019,10 @@ textarea:focus {
   .secondBox,
   .thirdBox {
     width: 100%;
-    margin: 0 0 1.5rem 0;
-    padding: 1.5rem 1rem;
-    font-size: 1.1rem;
-    line-height: 1.7;
+    margin: 0;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
     text-align: left;
     float: none;
     display: block;
