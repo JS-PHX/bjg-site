@@ -822,8 +822,8 @@ textarea:focus {
 
   /* ── Base ── */
   html, body {
-    background-image: linear-gradient(to top, #00000088 30%, #ffffff44 70%), url(pics/bjg-bg-mobile.jpg);
-    background-attachment: scroll;
+    background-image: linear-gradient(to top, #00000044 20%, #ffffff22 100%), url(pics/bjg-bg-mobile.jpg);
+      background-attachment: scroll;
     background-size: cover;
     background-position: center center;
   }
