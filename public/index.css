@@ -1357,4 +1357,14 @@ footer {
   font-family: 'Oswald', sans-serif;
   clear: both;
 }
+
+.footer {
+  background: none;
+  background-color: #012759;
+  padding: 0;
+  margin: 0;
+  min-height: unset;
+  height: auto;
+}
+
 }
