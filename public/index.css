@@ -829,11 +829,9 @@ textarea:focus {
   }
 
   #root {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: none;
-    background-size: unset;
+    min-height: 100vh;
   }
 
   /* ── Progress Bar ── */
@@ -1093,11 +1091,12 @@ textarea:focus {
     }
   
     .message {
-      width: 100%;
+      flex: 1;
       display: flex;
       align-items: center;
-      margin-top: 6rem;
-      padding: 0 1rem;
+      justify-content: center;
+      padding: 1rem;
+      margin-top: 5rem;
     }
   
     form {
@@ -1106,10 +1105,11 @@ textarea:focus {
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
       color: #F3F7FA;
       width: 100%;
+      margin: 0;
       height: auto;
       font-family: 'Cardo', serif;
       padding: 2rem 1.5rem;
-      margin: 0 auto 2rem auto;
+      /* margin: 0 auto 2rem auto; */
       display: block;
       border-radius: 4px;
     }
