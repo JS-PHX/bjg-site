@@ -8,10 +8,10 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm(
-      'service_mscgxyq',
-      'template_i24q4zp',
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       form.current,
-      'WHpfLyqJPl10QF4qF'
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     ).then((result) => {
       console.log(result.text);
     }, (error) => {
