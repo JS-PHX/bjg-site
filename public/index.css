@@ -1077,7 +1077,7 @@ textarea:focus {
   }
 
   /* contact form  */
-
+  @media (max-width: 768px) {
 
     .contactTitle {
       text-transform: uppercase;
@@ -1189,7 +1189,22 @@ textarea:focus {
       background-color: #FFD802;
       color: #012759;
     }
+
+    .footer {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
   
+    footer {
+      position: static;
+      width: 100%;
+      margin: 0;
+      padding: 0.5rem;
+      clear: both;
+    }
+  
+  }
   /* ^^^ contact form ^^^ */
 
 
