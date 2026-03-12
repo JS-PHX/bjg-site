@@ -822,10 +822,11 @@ textarea:focus {
 
   /* ── Base ── */
   html, body {
-    background-image: linear-gradient(to top, #00000044 20%, #ffffff22 100%), url(pics/bjg-bg-mobile.jpg);
-      background-attachment: scroll;
-    background-size: cover;
-    background-position: center center;
+    background-image: linear-gradient(to top, #00000044 20%, transparent 80%), url(pics/bjg-bg-mobile.jpg);
+    background-attachment: scroll;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
   }
 
   /* ── Progress Bar ── */
