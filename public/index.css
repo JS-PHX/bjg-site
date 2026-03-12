@@ -822,9 +822,9 @@ textarea:focus {
 
   /* ── Base ── */
   html, body {
-    background-attachment: scroll; /* fixed bg causes issues on mobile */
-    overflow-x: hidden;
-    overscroll-behavior: none;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
   }
 
   /* ── Progress Bar ── */
