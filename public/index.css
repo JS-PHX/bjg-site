@@ -1077,7 +1077,6 @@ textarea:focus {
   }
 
   /* contact form  */
-  @media (max-width: 768px) {
 
     .contactTitle {
       text-transform: uppercase;
@@ -1204,7 +1203,6 @@ textarea:focus {
       clear: both;
     }
   
-  }
   /* ^^^ contact form ^^^ */
 
 
