@@ -1075,7 +1075,7 @@ textarea:focus {
     position: static;
     padding: 0.5rem;
   }
-}
+
   /* contact form  */
 
   @media (max-width: 768px) {
@@ -1191,11 +1191,6 @@ textarea:focus {
       color: #012759;
     }
   
-    footer {
-      position: static;
-      padding: 0.5rem;
-    }
-
   }/* ^^^ contact form ^^^ */
 
 
@@ -1366,3 +1361,4 @@ footer {
   font-family: 'Oswald', sans-serif;
 }
 
+}
