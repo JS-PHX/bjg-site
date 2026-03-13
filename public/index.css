@@ -1245,17 +1245,34 @@ section .text-container4 {
       color: #012759;
     }
 
+    .successMessage {
+      width: 100%;
+      margin: 0;
+      padding: 2rem 1.5rem;
+      backdrop-filter: blur(10px);
+      background-color: rgba(1, 39, 89, 0.9);
+    }
+    
+    .successTitle {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    
+    .successText {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+    
+    .successBtn {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
   
   
   /* ^^^ contact form ^^^ */
-
-
-
-
-
-
-
-
 
 
 
