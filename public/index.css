@@ -683,20 +683,34 @@ textarea:focus {
   color: #F3F7FA;
 }
 
+.successMessage {
+  background-color: rgb(1, 40, 91, 0.5);
+  backdrop-filter: blur(10px);
+  width: 50%;
+  margin: 3rem auto;
+  padding: 4rem 3rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .successTitle {
   font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   margin-bottom: 1rem;
   color: #FFD802;
+  text-decoration: underline;
+  text-decoration-color: #FFD802;
+  text-underline-offset: 8px;
 }
 
 .successText {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   line-height: 1.7;
+  color: #F3F7FA;
 }
 
 .successBtn {
@@ -707,7 +721,7 @@ textarea:focus {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 2.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -716,14 +730,6 @@ textarea:focus {
   background-color: #FFD802;
   color: #012759;
 }
-
-.errorText {
-  color: #ff6b6b;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
 
 
 
