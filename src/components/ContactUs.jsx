@@ -39,7 +39,7 @@ export const ContactUs = () => {
         <div className="successMessage">
           <p className="successTitle">Message Sent!</p>
           <p className="successText">Thanks for reaching out. We'll get back to you shortly.</p>
-          <button className="successBtn" onClick={() => setSuccess(false)}>Send Another</button>
+          <button className="successBtn" onClick={() => setSuccess(false)}>Return</button>
         </div>
       ) : (
         <form ref={form} onSubmit={sendEmail}>
