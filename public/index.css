@@ -152,7 +152,7 @@ header {
   padding: 5px;
   background-color: transparent;
   z-index: 1;
-  height: 80px;
+  height: 10rem;
   width: auto;
   display: flex;
   align-items: center;
