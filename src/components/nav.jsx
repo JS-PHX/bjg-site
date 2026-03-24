@@ -25,7 +25,7 @@ export default function Nav() {
             <Link to="/">
               <img
                 className="logoLink"
-                src="./pics/TruckLogo.png"
+                src="./pics/truck_logo.png"
                 alt="logo"
               ></img>
             </Link>

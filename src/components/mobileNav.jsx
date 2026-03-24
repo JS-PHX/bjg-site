@@ -14,7 +14,7 @@ export default function MobileNav() {
         <div className="nav-container">
           <div className="logo-container">
             <Link to="/">
-              <img className="logoLink" src="./pics/TruckLogo.png" alt="logo" />
+              <img className="logoLink" src="./pics/truck_logo.png" alt="logo" />
             </Link>
             <h1 className="title">BJG Trucking</h1>
           </div>
