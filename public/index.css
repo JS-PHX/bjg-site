@@ -39,8 +39,6 @@ div.footer {
   background-position: unset;
 }
 
-
-
 .progress-bar {
   height: 3px;
   background-color: #FFD802;
@@ -50,7 +48,7 @@ div.footer {
 
 header {
   margin: 0px;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   padding: 0px;
   box-sizing: border-box;
   overflow: hidden;
@@ -163,12 +161,6 @@ header {
   background-clip: unset;
 }
 
-/* .logoLink img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: block;
-} */
 .logoLink:hover {
   --_p: 100%;
   --_s: .2s;
