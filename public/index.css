@@ -147,23 +147,22 @@ header {
 
 .logoLink {
   margin-left: 2em;
-  margin-top: 1.5rem;
+  margin-top: 0;
   float: left;
   padding: 5px;
   background-color: transparent;
-  overflow: hidden;
   z-index: 1;
-  height: 60px;
+  height: 80px;
   width: auto;
-  /* padding-block: var(--b); */
-  background: 
-  linear-gradient(var(--c) 50%,rgb(255, 255, 255) 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-  linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
-  -webkit-background-clip: text,padding-box;
-  background-clip: text,padding-box;
-  transition: .1s var(--_s,0s) linear,background-size .2s calc(.3s - var(--_s,0s));
+  display: flex;
+  align-items: center;
   transition: all 0.3s ease-in-out;
+  overflow: visible;
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
 }
+
 .logoLink img {
   height: 100%;
   width: auto;
