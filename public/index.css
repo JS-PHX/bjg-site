@@ -48,7 +48,7 @@ div.footer {
 
 header {
   margin: 0px;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   padding: 0px;
   box-sizing: border-box;
   overflow: hidden;
@@ -88,7 +88,7 @@ header {
   padding-bottom: 1rem;
   font-size: 38px;
   float: left;
-  color: #F3F7FA;
+  color: #00ff26;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   display: flex;
