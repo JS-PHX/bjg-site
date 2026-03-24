@@ -153,7 +153,8 @@ header {
   background-color: transparent;
   overflow: hidden;
   z-index: 1;
-  height: 5.5rem;
+  height: 60px;
+  width: auto;
   /* padding-block: var(--b); */
   background: 
   linear-gradient(var(--c) 50%,rgb(255, 255, 255) 0) 0% calc(100% - var(--_p,0%))/100% 200%,
@@ -162,6 +163,12 @@ header {
   background-clip: text,padding-box;
   transition: .1s var(--_s,0s) linear,background-size .2s calc(.3s - var(--_s,0s));
   transition: all 0.3s ease-in-out;
+}
+.logoLink img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 .logoLink:hover {
   --_p: 100%;
