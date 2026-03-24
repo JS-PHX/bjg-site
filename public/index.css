@@ -84,8 +84,8 @@ header {
 }
 
 .title {
-  margin-top: 3.5rem;
-  /* padding-bottom: 1rem; */
+  margin-top: 4rem;
+  padding-bottom: 1rem;
   font-size: 38px;
   float: left;
   color: #f3faf4;
@@ -148,7 +148,6 @@ header {
   margin-top: 0;
   float: left;
   padding: 5px;
-  padding-bottom: 0px;
   background-color: transparent;
   z-index: 1;
   height: 10rem;
