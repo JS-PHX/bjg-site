@@ -14,6 +14,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   overscroll-behavior: none;
+  overscroll-behavior-y: none;
 }
 
 div {
@@ -22,11 +23,22 @@ div {
   background-size: cover;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+div.footer {
+  margin-top: auto;
+}
+
 .app-content {
   background: none;
   background-size: unset;
   background-position: unset;
 }
+
 
 
 .progress-bar {
