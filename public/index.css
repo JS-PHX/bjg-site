@@ -22,6 +22,12 @@ div {
   background-size: cover;
 }
 
+.app-content {
+  background: none;
+  background-size: unset;
+  background-position: unset;
+}
+
 
 .progress-bar {
   height: 3px;

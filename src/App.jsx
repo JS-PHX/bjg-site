@@ -10,13 +10,13 @@ import AnimatedRoutes from "./components/AnimatedRoutes"
 
 export default function App(){
     return (
-        <>
-            <Nav />
-            <MobileNav />
-        <div>
-            <AnimatedRoutes />
+      <>
+        <Nav />
+        <MobileNav />
+        <div className="app-content">
+          <AnimatedRoutes />
         </div>
-            <Footer />
-        </>
+        <Footer />
+      </>
     )
-}
+  }
