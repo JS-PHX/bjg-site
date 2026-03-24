@@ -85,10 +85,10 @@ header {
 
 .title {
   margin-top: 3.5rem;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
   font-size: 38px;
   float: left;
-  color: #00ff26;
+  color: #f3faf4;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   display: flex;
@@ -148,6 +148,7 @@ header {
   margin-top: 0;
   float: left;
   padding: 5px;
+  padding-bottom: 0px;
   background-color: transparent;
   z-index: 1;
   height: 10rem;
