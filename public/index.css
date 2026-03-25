@@ -77,17 +77,6 @@ header {
   display: none;
 }
 
-.title {
-  margin-top: 3.5rem;
-  padding-bottom: 1.1rem;
-  font-size: 38px;
-  float: left;
-  color: #f3faf4;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  display: flex;
-  pointer-events: none;
-}
 
 /* .logo {
   margin: 10px;
@@ -137,10 +126,21 @@ header {
   transform: translateY(0);
 }
 
+.title {
+  margin-top: 4.5rem;
+  padding-bottom: 1.1rem;
+  font-size: 38px;
+  float: left;
+  color: #f3faf4;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  pointer-events: none;
+}
 
 .logoLink {
   margin-left: 2em;
-  margin-top: 0;
+  margin-top: 2rem;
   float: left;
   padding: 5px;
   background-color: transparent;
