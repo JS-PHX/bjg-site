@@ -26,11 +26,6 @@ body::before {
   background-repeat: no-repeat;
   z-index: -1;
 }
-div {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 #root {
   display: flex;
@@ -38,6 +33,7 @@ div {
   min-height: 100vh;
   position: relative;
   z-index: 0;
+  background: none;
 }
 div.footer {
   margin-top: auto;
