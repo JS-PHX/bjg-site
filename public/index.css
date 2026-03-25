@@ -16,27 +16,11 @@ html, body {
   overscroll-behavior-y: none;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top, #00000088 30%, #ffffff44 70%), url('/pics/bjg-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  position: relative;
-  z-index: 0;
-  background: transparent !important;
+  will-change: transform;
 }
 div.footer {
   margin-top: auto;
