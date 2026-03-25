@@ -921,7 +921,7 @@ textarea:focus {
 
   .logoLink {
     margin: 0;
-    height: 4rem;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
