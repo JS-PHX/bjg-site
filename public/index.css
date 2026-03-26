@@ -191,6 +191,11 @@ section {
   justify-content: center;
   align-items: center;
   height: auto;
+  background: none !important;
+}
+section:nth-child(2),
+section:nth-child(4) {
+  background: none !important;
 }
 section:nth-child(1) {
   color: #F3F7FA;
