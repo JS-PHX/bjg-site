@@ -22,6 +22,7 @@ html, body {
   overflow-x: hidden;
   scroll-behavior: auto;
   scroll-behavior: smooth;
+  will-change: scroll-position;
 }
 
 #root {
