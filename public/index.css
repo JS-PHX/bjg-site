@@ -2,12 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  touch-action: pan-y;
-}
-
-html, body, #root, .app-content {
-  pointer-events: auto;
-  touch-action: pan-y pinch-zoom;
 }
 
 html, body {
@@ -20,9 +14,7 @@ html, body {
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
-  scroll-behavior: auto;
-  scroll-behavior: smooth;
-  will-change: scroll-position;
+  -webkit-backface-visibility: hidden;
 }
 
 #root {
