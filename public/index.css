@@ -10,11 +10,13 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
+  transform: translateZ(0);
   background-position: center center;
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
   -webkit-backface-visibility: hidden;
+  overscroll-behavior-y: none;
 }
 
 #root {
