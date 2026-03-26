@@ -5,6 +5,11 @@
   touch-action: pan-y;
 }
 
+html, body, #root, .app-content {
+  pointer-events: auto;
+  touch-action: pan-y pinch-zoom;
+}
+
 html, body {
   background-color: #012759;
   background-image: linear-gradient(to top, #00000088 30%, #ffffff44 70%), url('/pics/bjg-bg.jpg');
