@@ -33,6 +33,9 @@ div.footer {
   background-size: unset;
   background-position: unset;
 }
+.app-content > div {
+  pointer-events: auto;
+}
 
 .progress-bar {
   height: 3px;
