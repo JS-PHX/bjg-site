@@ -33,7 +33,6 @@ export default function Home() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0, transition: { duration: 0.01 } }}
       >      
-      <body>
         <section className="container">
           <div className="text-container">
             <p>
@@ -75,7 +74,6 @@ export default function Home() {
               </RevealBox>
             </div>
         </section>
-      </body>
     </motion.div>
   );
 }
