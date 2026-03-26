@@ -28,7 +28,7 @@ const RevealBox = ({ children, className }) => {
 
 export default function Home() {
   return (
-      <motion.div
+      <div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0, transition: { duration: 0.01 } }}
@@ -74,6 +74,6 @@ export default function Home() {
               </RevealBox>
             </div>
         </section>
-    </motion.div>
+    </div>
   );
 }
