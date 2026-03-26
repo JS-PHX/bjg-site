@@ -15,7 +15,7 @@ html, body {
   background-image: linear-gradient(to top, #00000088 30%, #ffffff44 70%), url('/pics/bjg-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
