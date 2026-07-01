@@ -381,7 +381,7 @@ section .text-container4 {
   margin-top: 10rem;
   margin-bottom: 10rem;
   padding: 2rem;
-  width: 60%;
+  width: 100vh;
   font-size: 24px;
   z-index: 0;
   transition: ease all 1s;
