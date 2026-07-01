@@ -15,7 +15,7 @@ function AnimatedRoutes() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/ContactUs" element={<ContactUs />} />
-        <Route exact path="/gallery" element={<Gallery />} />
+        {/* <Route exact path="/gallery" element={<Gallery />} /> */}
       </Routes>
     </AnimatePresence>
   )

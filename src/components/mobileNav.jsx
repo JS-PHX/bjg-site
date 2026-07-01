@@ -29,9 +29,9 @@ export default function MobileNav() {
           <Link className="navLinks" to="/ContactUs" onClick={toggleNav}>
             Contact
           </Link>
-          <Link className="navLinks" to="/gallery" onClick={toggleNav}>
+          {/* <Link className="navLinks" to="/gallery" onClick={toggleNav}>
             Gallery
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </header>
