@@ -60,7 +60,7 @@ header {
   /* display: flex; */
   /* align-items: flex-end; */
   /* background-color: rgba(2, 62, 140); */
-  height: 100px;
+  height: 10px;
   width: 100%;
   box-shadow: 1px 1px 5px black;
   position: fixed;
@@ -380,7 +380,7 @@ section .text-container4 {
 .thirdBox {
   margin-top: 10rem;
   margin-bottom: 10rem;
-  padding: 2rem;
+  padding: 3rem;
   width: 100vh;
   font-size: 24px;
   z-index: 0;
