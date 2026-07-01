@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import ContactUs from "./ContactUs"
 import Home from "./home"
-import Gallery from "./gallery"
+// import Gallery from "./gallery"
 import {AnimatePresence} from "framer-motion"
 
 function AnimatedRoutes() {
