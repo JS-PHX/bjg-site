@@ -10,11 +10,11 @@ export default function Nav() {
                 Home
               </Link>
             </p>
-            <p>
+            {/* <p>
               <Link className="navLinks" to="/gallery">
                 Gallery
               </Link>
-            </p>
+            </p> */}
             <p>
               <Link className="navLinks" to="/EmailForm">
                 Contact
