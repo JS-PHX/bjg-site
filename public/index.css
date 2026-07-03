@@ -12,6 +12,7 @@ html, body {
   background-attachment: scroll;
   background-position: center center;
   height: 100%;
+  height: -webkit-fill-available;
   min-height: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -28,10 +29,12 @@ div.footer {
   margin-top: auto;
 }
 
+#root {
+  min-height: 100dvh;
+}
+
 .app-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .app-content {
