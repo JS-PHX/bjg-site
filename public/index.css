@@ -28,6 +28,7 @@ html, body {
 .message,
 section.container {
   flex: 1;
+  background-color: #012759;
 }
 
 div.footer {
@@ -330,11 +331,11 @@ section .text-container3 {
   text-align: center; 
 }
 section .text-container4 {
-  display: block;
+  display: inline-block;
   margin: auto;
   width: 100%;
   background: linear-gradient(to bottom, #012759dd, #012759ff);
-  min-height: 40vh;
+  height: auto;
   backdrop-filter: blur(1.25px);
 }
 /* section .text-container .text-box {
