@@ -1,74 +1,96 @@
-<html>
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="index.css" type="text/css" />
-        <link rel="stylesheet" href=link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
-        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <script defer src="node_modules/swup/dist/swup.min.js"></script>
-        <link rel="icon" type="image/png" href="./pics/bjg-icon.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
+<html lang="en">
+  <head>
+    <title>BJG Trucking Inc. | Dump Truck & Hauling Services | Greater Phoenix, AZ</title>
 
-    <body>
-        <div class="progress-bar"></div>
-        
-        <div id="root"></div>
-        <script src="/index.js"></script>
-        <script>
-            function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-            var lastScrollPos = 0;
+    <!-- SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BJG Trucking Inc. is a family-owned dump truck and hauling company serving the Greater Phoenix area since 2003. Specializing in bulk hauling, construction material transport, and custom trucking needs." />
+    <meta name="keywords" content="dump truck, trucking, hauling, Phoenix, Arizona, construction, bulk hauling, BJG Trucking, dump truck Phoenix, hauling company Phoenix" />
+    <meta name="author" content="BJG Trucking Inc." />
+    <meta name="robots" content="index, follow" />
 
-            function revealElements() {
-                var currentScrollPos = window.scrollY || window.pageYOffset;
-                var scrollDirection = currentScrollPos > lastScrollPos ? "down" : "up";
-                
-                reveals.forEach(reveal => {
-                var revealTop = reveal.getBoundingClientRect().top;
-                var revealOffset = window.innerHeight * 0.75;
+    <meta property="og:title" content="BJG Trucking Inc. | Dump Truck & Hauling Services" />
+    <meta property="og:description" content="Family-owned dump truck and hauling company serving Greater Phoenix since 2003. Bulk hauling, construction material transport, and custom trucking." />
+    <meta property="og:image" content="/pics/bjg-bg.jpg" />
+    <meta property="og:url" content="https://bjg-site.vercel.app" />
+    <meta property="og:type" content="website" />
 
-                if (scrollDirection === "down" && revealTop < revealOffset) {
-                    reveal.classList.add("active");
-                } else if (scrollDirection === "up" && revealTop > revealOffset) {
-                    reveal.classList.remove("active");
-                }
-                });
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "BJG Trucking Inc.",
+      "description": "Family-owned dump truck and hauling company serving the Greater Phoenix area since 2003.",
+      "telephone": "(602) 200-7028",
+      "faxNumber": "(602) 200-7029",
+      "foundingDate": "2003",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      },
+      "areaServed": "Greater Phoenix, Arizona",
+      "url": "https://bjgtrucking.com"
+    }
+    </script>
 
-                lastScrollPos = currentScrollPos;
+    <link rel="icon" type="image/png" href="./pics/bjg-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="index.css" type="text/css" />
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+
+  </head>
+  <body>
+    <div class="progress-bar"></div>
+    <div id="root"></div>
+    <script src="/index.js"></script>
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        var lastScrollPos = 0;
+        function revealElements() {
+          var currentScrollPos = window.scrollY || window.pageYOffset;
+          var scrollDirection = currentScrollPos > lastScrollPos ? "down" : "up";
+          reveals.forEach(reveal => {
+            var revealTop = reveal.getBoundingClientRect().top;
+            var revealOffset = window.innerHeight * 0.75;
+            if (scrollDirection === "down" && revealTop < revealOffset) {
+              reveal.classList.add("active");
+            } else if (scrollDirection === "up" && revealTop > revealOffset) {
+              reveal.classList.remove("active");
             }
-
-            window.addEventListener("scroll", revealElements);
-            }
-
-            reveal();
-
-
-
-
-
-                window.addEventListener("scroll", reveal);
-
-                window.onbeforeunload = function () {
-                window.scrollTo(0, 0);}
-
-                document.addEventListener('DOMContentLoaded', function() {
-                let progressBar = document.querySelector('.progress-bar');
-
-                window.addEventListener("scroll", function() {
-                let scrollPos = window.scrollY;
-                let documentHeight = document.documentElement.scrollHeight - window.innerHeight;
-                let percentScrolled = (scrollPos / documentHeight) * 100;
-                let progressBar = document.querySelector(".progress-bar");
-                progressBar.style.width = percentScrolled + "%";
-            });
-        })
-
-        </script>
-    </body>
+          });
+          lastScrollPos = currentScrollPos;
+        }
+        window.addEventListener("scroll", revealElements);
+      }
+      reveal();
+      window.addEventListener("scroll", reveal);
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener("scroll", function() {
+          let scrollPos = window.scrollY;
+          let documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+          let percentScrolled = (scrollPos / documentHeight) * 100;
+          let progressBar = document.querySelector(".progress-bar");
+          progressBar.style.width = percentScrolled + "%";
+        });
+      });
+    </script>
+  </body>
 </html>
