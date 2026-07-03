@@ -330,11 +330,11 @@ section .text-container3 {
   text-align: center; 
 }
 section .text-container4 {
-  display: inline-block;
+  display: block;
   margin: auto;
   width: 100%;
   background: linear-gradient(to bottom, #012759dd, #012759ff);
-  height: auto;
+  min-height: 40vh;
   backdrop-filter: blur(1.25px);
 }
 /* section .text-container .text-box {
