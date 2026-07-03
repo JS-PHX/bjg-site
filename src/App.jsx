@@ -9,14 +9,14 @@ import Footer from "./components/footer"
 import AnimatedRoutes from "./components/AnimatedRoutes"
 
 export default function App(){
-    return (
-      <>
-        <Nav />
-        <MobileNav />
-        <div className="app-content">
-          <AnimatedRoutes />
-        </div>
-        <Footer />
-      </>
-    )
-  }
+  return (
+    <div className="app-wrapper">
+      <Nav />
+      <MobileNav />
+      <div className="app-content">
+        <AnimatedRoutes />
+      </div>
+      <Footer />
+    </div>
+  )
+}
