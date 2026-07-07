@@ -21,10 +21,6 @@ html, body {
 
 
 
-.message {  flex: 1;
-  background-color: #012759;
-}
-
 div.footer {
   margin-top: auto;
 }
